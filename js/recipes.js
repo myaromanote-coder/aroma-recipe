@@ -731,8 +731,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-220', name: '안티에이징 페이스 미스트', category: '피부',
     description: '프랑킨센스·코파이바·제라늄·시더우드 안티에이징 미스트.\n얼굴에 자주 분사해주세요.',
-    refVolume: 10, carrier: '포어리듀싱토어 채우기',
-    ingredients: [{ name: '프랑킨센스', drops: 2 }, { name: '코파이바', drops: 2 }, { name: '라벤더', drops: 2 }, { name: '제라늄', drops: 2 }, { name: '패출리', drops: 2 }, { name: '시더우드', drops: 2 }],
+    refVolume: 100, carrier: '포어리듀싱토어 채우기',
+    ingredients: [{ name: '프랑킨센스', drops: 2 }, { name: '코파이바', drops: 2 }, { name: '라벤더', drops: 2 }, { name: '제라늄', drops: 2 }, { name: '패촐리', drops: 2 }, { name: '시더우드', drops: 2 }],
     notes: '얼굴에 자주 분사해주세요.'
   },
   {
