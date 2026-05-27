@@ -130,23 +130,47 @@
     document.getElementById('detailNotes').textContent = notes || '-';
     if (!notes) document.getElementById('notesCard').style.display = 'none';
 
-    // 재료+방울수 테이블 렌더링
+    // 계산기 초기화
+    if (recipe.refVolume > 0) {
+      targetVolume = recipe.refVolume;
+      // 기준 볼륨과 일치하는 프리셋 활성화
+      document.querySelectorAll('#volumePresets .preset').forEach(btn => {
+        if (parseFloat(btn.dataset.v) === recipe.refVolume) btn.classList.add('active');
+      });
+      setupPresets();
+    } else {
+      document.getElementById('volumePresets').style.display = 'none';
+    }
+
     renderDropsTable();
 
     document.getElementById('loadingState').style.display = 'none';
     document.getElementById('recipeContent').style.display = 'block';
   }
 
+  function setupPresets() {
+    document.querySelectorAll('#volumePresets .preset').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#volumePresets .preset').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        targetVolume = parseFloat(btn.dataset.v);
+        renderDropsTable();
+      });
+    });
+  }
+
   function renderDropsTable() {
     const ings = recipe.ingredients || [];
-    const totalDrops = ings.reduce((s, i) => s + (i.drops || 0), 0);
+    const refDrops = ings.reduce((s, i) => s + (i.drops || 0), 0);
+    const scale = recipe.refVolume > 0 ? targetVolume / recipe.refVolume : 1;
+    const totalDrops = Math.round(refDrops * scale);
 
-    // 요약 라벨
+    // 요약
     const summaryEl = document.getElementById('calcSummary');
     if (recipe.refVolume > 0) {
-      summaryEl.textContent = `기준 ${recipe.refVolume}ml | 에센셜오일 총 ${totalDrops}방울`;
+      summaryEl.textContent = `${targetVolume}ml 기준 | 에센셜오일 총 ${totalDrops}방울`;
     } else {
-      summaryEl.textContent = `에센셜오일 총 ${totalDrops}방울`;
+      summaryEl.textContent = `에센셜오일 총 ${refDrops}방울`;
     }
 
     // 테이블
@@ -155,9 +179,10 @@
       : '';
 
     document.getElementById('calcBody').innerHTML =
-      ings.map(ing =>
-        `<tr><td>${ing.name}</td><td class="drops-val">${ing.drops}방울</td></tr>`
-      ).join('') + carrierRow;
+      ings.map(ing => {
+        const drops = recipe.refVolume > 0 ? Math.round((ing.drops || 0) * scale) : (ing.drops || 0);
+        return `<tr><td>${ing.name}</td><td class="drops-val">${drops}방울</td></tr>`;
+      }).join('') + carrierRow;
   }
 
   function setupFavorite() {
