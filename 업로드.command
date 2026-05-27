@@ -9,7 +9,6 @@ echo "  🌿 아로마 레시피 GitHub 업로드"
 echo "========================================="
 echo ""
 
-# 변경사항 확인
 CHANGES=$(git status --short)
 
 if [ -z "$CHANGES" ]; then
@@ -19,21 +18,19 @@ else
   git status --short
   echo ""
 
-  # 커밋 및 업로드
   git add -A
-  git commit -m "레시피 업데이트 $(date '+%Y-%m-%d %H:%M')"
-  git push origin main
+  git commit -m "업데이트 $(date '+%Y-%m-%d %H:%M')"
+  GIT_TERMINAL_PROMPT=0 git push origin main
 
   echo ""
   if [ $? -eq 0 ]; then
     echo "✅ GitHub 업로드 완료!"
-    echo "🌐 사이트: https://myaromanote-coder.github.io/aroma-recipe/"
-    echo "   (1~2분 후 반영됩니다)"
+    echo "🌐 https://myaromanote-coder.github.io/aroma-recipe/"
+    echo "   (1~2분 후 사이트에 반영됩니다)"
   else
     echo "❌ 업로드 실패. 인터넷 연결을 확인해주세요."
   fi
 fi
 
 echo ""
-echo "-----------------------------------------"
-read -p "엔터를 눌러 창을 닫으세요..."
+read -p "엔터를 눌러 닫으세요..."
