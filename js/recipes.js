@@ -40,7 +40,7 @@ const BUILTIN_RECIPES = [
     id: 'r-006', name: '셀룰라이트', category: '피부',
     description: '셀룰라이트 완화 바디 마사지오일.\n지몽·메타파워가 지방 분해를 돕습니다.\n목욕 후 마사지하듯 도포하세요.',
     refVolume: 100, carrier: '코코넛오일 채우기',
-    ingredients: [{ name: '지몽', drops: 30 }, { name: '메타파워', drops: 30 }, { name: '사이프레스', drops: 15 }, { name: '진저', drops: 15 }, { name: '파출리', drops: 6 }, { name: '로즈제라늄', drops: 6 }],
+    ingredients: [{ name: '지몽', drops: 30 }, { name: '메타파워', drops: 30 }, { name: '사이프레스', drops: 15 }, { name: '진저', drops: 15 }, { name: '파촐리', drops: 6 }, { name: '로즈제라늄', drops: 6 }],
     notes: ''
   },
   {
@@ -432,9 +432,9 @@ const BUILTIN_RECIPES = [
   },
   {
     id: 'r-107', name: '천연데오드란트', category: '건강케어',
-    description: '파출리·사이프레스·로즈제라늄 천연 데오드란트.\n파출리가 냄새를, 사이프레스가 땀을 조절합니다.\n겨드랑이에 뿌리세요.',
+    description: '파촐리·사이프레스·로즈제라늄 천연 데오드란트.\n파촐리가 냄새를, 사이프레스가 땀을 조절합니다.\n겨드랑이에 뿌리세요.',
     refVolume: 100, carrier: '정제수 60% + 발향베이스 40%',
-    ingredients: [{ name: '파출리', drops: 20 }, { name: '사이프레스', drops: 20 }, { name: '로즈제라늄', drops: 20 }, { name: '유칼립투스', drops: 10 }, { name: '티트리', drops: 10 }, { name: '레몬', drops: 10 }],
+    ingredients: [{ name: '파촐리', drops: 20 }, { name: '사이프레스', drops: 20 }, { name: '로즈제라늄', drops: 20 }, { name: '유칼립투스', drops: 10 }, { name: '티트리', drops: 10 }, { name: '레몬', drops: 10 }],
     notes: ''
   },
   {
@@ -732,7 +732,7 @@ const BUILTIN_RECIPES = [
     id: 'r-220', name: '안티에이징 페이스 미스트', category: '피부',
     description: '프랑킨센스·코파이바·제라늄·시더우드 안티에이징 미스트.\n얼굴에 자주 분사해주세요.',
     refVolume: 100, carrier: '포어리듀싱토어 채우기',
-    ingredients: [{ name: '프랑킨센스', drops: 2 }, { name: '코파이바', drops: 2 }, { name: '라벤더', drops: 2 }, { name: '제라늄', drops: 2 }, { name: '패촐리', drops: 2 }, { name: '시더우드', drops: 2 }],
+    ingredients: [{ name: '프랑킨센스', drops: 2 }, { name: '코파이바', drops: 2 }, { name: '라벤더', drops: 2 }, { name: '제라늄', drops: 2 }, { name: '파촐리', drops: 2 }, { name: '시더우드', drops: 2 }],
     notes: '얼굴에 자주 분사해주세요.'
   },
   {
