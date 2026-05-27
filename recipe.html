@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7B6FA0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>레시피 - 아로마 레시피</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="top-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-emoji">🌿</span>
+      <span>아로마 레시피</span>
+    </a>
+    <div class="header-actions">
+      <a class="icon-btn" href="index.html" title="검색">🔍</a>
+      <a class="icon-btn" href="favorites.html" title="즐겨찾기">❤️</a>
+    </div>
+  </div>
+</header>
+
+<div class="page-wrap">
+  <a class="back-link" href="index.html" id="backBtn">← 목록으로</a>
+
+  <div class="loading" id="loadingState">
+    <div class="spinner"></div>
+    <p>불러오는 중...</p>
+  </div>
+
+  <div id="recipeContent" style="display:none">
+
+    <!-- 헤더 -->
+    <div class="recipe-hero">
+      <div class="recipe-hero-top">
+        <span class="category-badge" id="detailCategory"></span>
+        <button class="fav-btn-hero" id="favBtnHero">🤍</button>
+      </div>
+      <div class="recipe-title" id="detailName"></div>
+      <div class="recipe-desc-hero" id="detailDesc"></div>
+    </div>
+
+    <!-- 재료 & 방울수 -->
+    <div class="calculator">
+      <div class="section-title">재료 & 방울수</div>
+      <div class="calc-summary" id="calcSummary"></div>
+      <div class="result-table-wrap">
+        <table class="result-table">
+          <thead>
+            <tr>
+              <th>재료</th>
+              <th style="width:80px">방울 수</th>
+            </tr>
+          </thead>
+          <tbody id="calcBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 재료 -->
+    <div class="info-card">
+      <div class="section-title">🌱 사용 재료</div>
+      <ul class="ing-list" id="detailIngredients"></ul>
+    </div>
+
+    <!-- 사용법 & 주의사항 -->
+    <div class="info-card" id="notesCard">
+      <div class="section-title">📝 사용법 & 주의사항</div>
+      <p class="notes-text" id="detailNotes"></p>
+    </div>
+
+  </div>
+</div>
+
+<nav class="bottom-nav">
+  <a class="nav-tab" href="index.html"><span class="nav-icon">🏠</span><span>홈</span></a>
+  <a class="nav-tab" href="favorites.html"><span class="nav-icon">❤️</span><span>즐겨찾기</span></a>
+  <a class="nav-tab" href="admin.html"><span class="nav-icon">⚙️</span><span>관리</span></a>
+</nav>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/recipes.js"></script>
+<script src="js/db.js"></script>
+<script src="js/recipe.js"></script>
+<script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js');</script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4A4A8A">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>관리자 - 아로마 레시피</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 상단 헤더 -->
+<header class="top-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-emoji">🌿</span>
+      <span>아로마 레시피</span>
+    </a>
+  </div>
+</header>
+
+<!-- 히어로 -->
+<section class="admin-hero">
+  <h1>⚙️ 레시피 관리</h1>
+  <p>레시피를 추가하고 관리하세요. 추가된 레시피는 이 기기에 저장됩니다.</p>
+</section>
+
+<!-- 메인 -->
+<main class="main">
+
+  <!-- 툴바 -->
+  <div class="admin-toolbar">
+    <h2 id="recipeCountLabel">레시피</h2>
+    <div class="btn-group">
+      <button class="btn btn-outline btn-sm" id="importBtn">📥 가져오기</button>
+      <button class="btn btn-outline btn-sm" id="exportBtn">📤 내보내기</button>
+      <button class="btn btn-primary" id="addBtn">+ 레시피 추가</button>
+    </div>
+  </div>
+
+  <!-- 레시피 테이블 -->
+  <div class="admin-table-wrap">
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>레시피 이름</th>
+          <th>카테고리</th>
+          <th>주요 재료</th>
+          <th>관리</th>
+        </tr>
+      </thead>
+      <tbody id="adminTableBody">
+        <tr><td colspan="4" style="text-align:center;padding:30px;color:#999">불러오는 중...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 안내 -->
+  <div style="margin-top:16px;padding:14px;background:#F4F0FF;border-radius:10px;font-size:0.8rem;color:#5C5080;line-height:1.6">
+    💡 <strong>내보내기 / 가져오기:</strong> 추가한 레시피를 JSON 파일로 저장하거나, 다른 기기에서 만든 레시피를 불러올 수 있습니다.
+  </div>
+</main>
+
+<!-- 하단 네비게이션 -->
+<nav class="bottom-nav">
+  <a class="nav-tab" href="index.html">
+    <span class="nav-icon">🏠</span>
+    <span>홈</span>
+  </a>
+  <a class="nav-tab" href="favorites.html">
+    <span class="nav-icon">❤️</span>
+    <span>즐겨찾기</span>
+  </a>
+  <a class="nav-tab active" href="admin.html">
+    <span class="nav-icon">⚙️</span>
+    <span>관리</span>
+  </a>
+</nav>
+
+<!-- 레시피 추가/수정 모달 -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="modal-title" id="modalTitle">레시피 추가</span>
+      <button class="modal-close" id="modalClose">✕</button>
+    </div>
+
+    <form id="recipeForm">
+      <div class="form-group">
+        <label>레시피 이름 *</label>
+        <input type="text" id="fName" required placeholder="예: 숙면 라벤더 블렌드">
+      </div>
+
+      <div class="form-group">
+        <label>카테고리 *</label>
+        <select id="fCategory" required>
+          <option value="수면">😴 수면</option>
+          <option value="스트레스">🌸 스트레스</option>
+          <option value="집중력">🧠 집중력</option>
+          <option value="피부">✨ 피부</option>
+          <option value="기분전환">☀️ 기분전환</option>
+          <option value="호흡기">💨 호흡기</option>
+          <option value="기타">기타</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>설명</label>
+        <textarea id="fDesc" placeholder="이 레시피의 특징과 효능을 간략히 설명하세요"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>재료 (비율 합계 = 100%) *</label>
+        <div class="ing-editor" id="ingEditor"></div>
+        <button type="button" class="add-ing-btn" id="addIngBtn">+ 재료 추가</button>
+        <span class="ratio-indicator" id="ratioIndicator"></span>
+      </div>
+
+      <div class="form-group">
+        <label>기본 희석 농도 (%)</label>
+        <select id="fDilution">
+          <option value="0.5">0.5%</option>
+          <option value="1">1%</option>
+          <option value="2" selected>2%</option>
+          <option value="3">3%</option>
+          <option value="5">5%</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>캐리어 오일</label>
+        <input type="text" id="fCarrier" placeholder="예: 호호바 오일, 스위트 아몬드 오일">
+      </div>
+
+      <div class="form-group">
+        <label>사용법 & 주의사항</label>
+        <textarea id="fNotes" rows="4" placeholder="사용 방법, 주의사항, 보관 방법 등을 입력하세요"></textarea>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline" id="cancelBtn">취소</button>
+        <button type="submit" class="btn btn-primary" id="saveBtn">저장</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- 숨겨진 파일 입력 -->
+<input type="file" id="importInput" accept=".json" style="display:none">
+
+<!-- 토스트 -->
+<div class="toast" id="toast"></div>
+
+<script src="js/recipes.js"></script>
+<script src="js/db.js"></script>
+<script src="js/admin.js"></script>
+<script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js');</script>
+</body>
+</html>
