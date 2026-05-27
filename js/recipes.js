@@ -585,5 +585,245 @@ const BUILTIN_RECIPES = [
     refVolume: 100, carrier: '비누베이스 100g + EM원액 10ml',
     ingredients: [{ name: '온가드', drops: 2 }, { name: '오렌지', drops: 1 }],
     notes: '레몬, 자몽 추가 가능. 65-70도에서 에센셜오일 넣기'
+  },
+
+  // ── Rollerball Wellness DIY 추가 레시피 ───────────────
+  {
+    id: 'r-200', name: '무좀 롤온', category: '건강케어',
+    description: '오레가노·티트리·레몬그라스 강력 항균 무좀 케어.\n무좀 부위와 그 주변에 발라주세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '오레가노', drops: 8 }, { name: '티트리', drops: 8 }, { name: '레몬', drops: 5 }, { name: '라벤더', drops: 5 }, { name: '레몬그라스', drops: 5 }],
+    notes: '무좀 부위와 그 주변에 발라주세요.'
+  },
+  {
+    id: 'r-201', name: '면역력 롤온', category: '호흡기',
+    description: '시나몬바크·클로브·티트리 조합 면역 강화 롤온.\n목, 발바닥, 가슴, 등척추에 바르세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '시나몬바크', drops: 4 }, { name: '클로브', drops: 3 }, { name: '레몬', drops: 5 }, { name: '티트리', drops: 6 }, { name: '오레가노', drops: 2 }, { name: '로즈마리', drops: 4 }],
+    notes: '목, 발바닥, 가슴, 등척추에 바르세요.'
+  },
+  {
+    id: 'r-202', name: '두통 롤온', category: '통증',
+    description: '페퍼민트·라벤더·프랑킨센스 두통 완화 롤온.\n통증 부위에 바르고 향을 맡으세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '페퍼민트', drops: 10 }, { name: '라벤더', drops: 10 }, { name: '프랑킨센스', drops: 8 }],
+    notes: '통증 부위에 바르고 향을 맡으세요.'
+  },
+  {
+    id: 'r-203', name: '독감예방 롤온', category: '호흡기',
+    description: '프랑킨센스·티트리·온가드·레몬 독감 예방 롤온.\n가슴, 등척추, 발바닥에 바르세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '프랑킨센스', drops: 5 }, { name: '티트리', drops: 7 }, { name: '온가드', drops: 6 }, { name: '레몬', drops: 7 }, { name: '오레가노', drops: 3 }],
+    notes: '가슴, 등척추, 발바닥에 바르세요.'
+  },
+  {
+    id: 'r-204', name: '근육통증 롤온', category: '통증',
+    description: '라벤더·페퍼민트·사이프러스·마조람 근육 이완 롤온.\n통증이 있는 근육 부위에 바르세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '라벤더', drops: 12 }, { name: '페퍼민트', drops: 12 }, { name: '사이프러스', drops: 5 }, { name: '마조람', drops: 3 }],
+    notes: '통증이 있는 근육 부위에 바르세요.'
+  },
+  {
+    id: 'r-205', name: '다목적 청소 스프레이', category: '생활용품',
+    description: '온가드·레몬 항균 다목적 청소 스프레이.\n청소가 필요한 곳에 뿌리고 닦아냅니다.',
+    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
+    ingredients: [{ name: '온가드', drops: 6 }, { name: '레몬', drops: 3 }],
+    notes: '청소가 필요한 곳에 뿌리고 닦아낸다.'
+  },
+  {
+    id: 'r-206', name: '계절알러지 롤온', category: '호흡기',
+    description: '라벤더·레몬·페퍼민트 계절 알러지 완화 롤온.\n부비강, 눈썹 위, 코 아래에 바른 후 향을 맡으세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '라벤더', drops: 10 }, { name: '레몬', drops: 10 }, { name: '페퍼민트', drops: 10 }],
+    notes: '부비강 위, 눈썹 위, 코 아래에 바른 후 향을 맡으세요.'
+  },
+  {
+    id: 'r-207', name: '뇌순환(중추신경계) 롤온', category: '건강케어',
+    description: '프랑킨센스·코파이바·밸런스·페퍼민트 뇌순환 케어.\n두피에 바르고 마사지하세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '프랑킨센스', drops: 10 }, { name: '코파이바', drops: 10 }, { name: '밸런스', drops: 10 }, { name: '페퍼민트', drops: 10 }],
+    notes: '두피에 바르고 마사지하세요.'
+  },
+  {
+    id: 'r-208', name: '기침.가래 롤온', category: '호흡기',
+    description: '유칼립투스·티트리·프랑킨센스 기침·가래 완화.\n가슴과 목에 바르세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '유칼립투스', drops: 8 }, { name: '프랑킨센스', drops: 4 }, { name: '티트리', drops: 6 }, { name: '레몬', drops: 3 }],
+    notes: '가슴, 목에 바르세요.'
+  },
+  {
+    id: 'r-209', name: '호흡기 룸스프레이 (비염·미세먼지)', category: '호흡기',
+    description: '유칼립투스·페퍼민트·티트리 호흡기 보호 룸스프레이.\n필요한 공간이나 섬유에 스프레이합니다.',
+    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
+    ingredients: [{ name: '유칼립투스', drops: 3 }, { name: '페퍼민트', drops: 2 }, { name: '레몬', drops: 2 }, { name: '티트리', drops: 2 }],
+    notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
+  },
+  {
+    id: 'r-210', name: '시트러스향 룸스프레이', category: '생활용품',
+    description: '라임·레몬·버가못의 상큼한 시트러스 룸스프레이.\n필요한 공간이나 섬유에 스프레이합니다.',
+    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
+    ingredients: [{ name: '라임', drops: 3 }, { name: '레몬', drops: 4 }, { name: '버가못', drops: 4 }],
+    notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
+  },
+  {
+    id: 'r-211', name: '숙면.릴렉스 롤온', category: '수면',
+    description: '버가못·시더우드·프랑킨센스·라벤더 숙면 롤온.\n발바닥, 가슴, 목뒤, 손목에 바르세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '버가못', drops: 10 }, { name: '시더우드', drops: 10 }, { name: '프랑킨센스', drops: 5 }, { name: '라벤더', drops: 5 }],
+    notes: '발바닥, 가슴, 목뒤, 손목에 바르세요.'
+  },
+  {
+    id: 'r-212', name: '손소독제 스프레이', category: '생활용품',
+    description: '온가드·오렌지 항균 손소독제 스프레이.\n필요할 때마다 손에 스프레이합니다.',
+    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
+    ingredients: [{ name: '온가드', drops: 5 }, { name: '오렌지', drops: 2 }],
+    notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
+  },
+  {
+    id: 'r-213', name: '소화.배앓이.멀미.장염 롤온', category: '건강케어',
+    description: '진저·페퍼민트·오렌지·바질 소화기 케어 롤온.\n배, 발바닥에 바르고 향을 맡으세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '진저', drops: 10 }, { name: '오렌지', drops: 5 }, { name: '페퍼민트', drops: 10 }, { name: '바질', drops: 5 }],
+    notes: '배, 발바닥에 바르고 향을 맡으세요.'
+  },
+  {
+    id: 'r-214', name: '셀룰라이트(지방분해) 롤온', category: '피부',
+    description: '자몽·레몬·쥬니퍼베리 셀룰라이트 지방분해 롤온.\n해당 부위에 바르고 마사지하세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '레몬', drops: 5 }, { name: '쥬니퍼베리', drops: 3 }, { name: '자몽', drops: 20 }],
+    notes: '해당 부위에 바르고 마사지하세요.'
+  },
+  {
+    id: 'r-215', name: '산뜻한 공기 룸스프레이', category: '생활용품',
+    description: '페퍼민트·오렌지·유칼립투스·로즈마리 청량 룸스프레이.\n필요한 공간이나 섬유에 스프레이합니다.',
+    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
+    ingredients: [{ name: '페퍼민트', drops: 2 }, { name: '오렌지', drops: 3 }, { name: '유칼립투스', drops: 2 }, { name: '로즈마리', drops: 1 }],
+    notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
+  },
+  {
+    id: 'r-216', name: '불안.걱정 롤온', category: '스트레스',
+    description: '버가못·라벤더·프랑킨센스·일랑일랑 불안 완화 롤온.\n향수처럼 맥박에 바르고 향을 맡으세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '버가못', drops: 5 }, { name: '프랑킨센스', drops: 3 }, { name: '라벤더', drops: 4 }, { name: '일랑일랑', drops: 2 }],
+    notes: '향수처럼 맥박에 바르고 향을 맡으세요.'
+  },
+  {
+    id: 'r-217', name: '비염.천식.코막힘 롤온', category: '호흡기',
+    description: '유칼립투스·페퍼민트·레몬 편안한 호흡 롤온.\n가슴, 등, 코밀에 바르고 향을 맡으세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '유칼립투스', drops: 8 }, { name: '레몬', drops: 8 }, { name: '프랑킨센스', drops: 3 }, { name: '페퍼민트', drops: 8 }],
+    notes: '가슴, 등, 코밑에 바르고 향을 맡으세요.'
+  },
+  {
+    id: 'r-218', name: '생리증후군 롤온', category: '건강케어',
+    description: '클래리세이지·라벤더·일랑일랑·시더우드 생리 케어 롤온.\n생리 전후 목뒤, 가슴, 복부에 바르세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '클래리세이지', drops: 10 }, { name: '라벤더', drops: 8 }, { name: '일랑일랑', drops: 3 }, { name: '시더우드', drops: 5 }],
+    notes: '생리 전후 목뒤, 가슴, 복부에 바르세요.'
+  },
+  {
+    id: 'r-219', name: '반려견 냄새제거 스프레이', category: '생활용품',
+    description: '라벤더·오렌지·티트리·유칼립투스 반려견 냄새 제거.\n필요한 공간이나 섬유에 스프레이합니다.',
+    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
+    ingredients: [{ name: '라벤더', drops: 3 }, { name: '오렌지', drops: 3 }, { name: '티트리', drops: 2 }, { name: '유칼립투스', drops: 2 }],
+    notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
+  },
+  {
+    id: 'r-220', name: '안티에이징 페이스 미스트', category: '피부',
+    description: '프랑킨센스·코파이바·제라늄·시더우드 안티에이징 미스트.\n얼굴에 자주 분사해주세요.',
+    refVolume: 10, carrier: '포어리듀싱토어 채우기',
+    ingredients: [{ name: '프랑킨센스', drops: 2 }, { name: '코파이바', drops: 2 }, { name: '라벤더', drops: 2 }, { name: '제라늄', drops: 2 }, { name: '패출리', drops: 2 }, { name: '시더우드', drops: 2 }],
+    notes: '얼굴에 자주 분사해주세요.'
+  },
+  {
+    id: 'r-221', name: '안티스트레스 롤온', category: '스트레스',
+    description: '스피아민트·라임·자몽·라벤더 스트레스 해소 롤온.\n손목, 목, 관자놀이에 바르세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '스피아민트', drops: 5 }, { name: '라임', drops: 10 }, { name: '자몽', drops: 10 }, { name: '라벤더', drops: 5 }],
+    notes: ''
+  },
+  {
+    id: 'r-222', name: '안티에이징스킨 (주름재생·건조)', category: '피부',
+    description: '프랑킨센스·샌달우드·미르·로즈제라늄 주름 재생 롤온.\n얼굴에 바르세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '프랑킨센스', drops: 4 }, { name: '샌달우드', drops: 2 }, { name: '라벤더', drops: 3 }, { name: '미르', drops: 2 }, { name: '로즈제라늄', drops: 2 }],
+    notes: '얼굴에 바르세요.'
+  },
+  {
+    id: 'r-223', name: '아토피(극건조) 롤온', category: '피부',
+    description: '캐모마일·라벤더·티트리·프랑킨센스 아토피 집중 케어.\n필요한 환부에 바르세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '캐모마일', drops: 6 }, { name: '라벤더', drops: 8 }, { name: '티트리', drops: 8 }, { name: '프랑킨센스', drops: 4 }],
+    notes: '필요한 환부에 바르세요.'
+  },
+  {
+    id: 'r-224', name: '혈액순환.부종 롤온', category: '통증',
+    description: '사이프러스·레몬그라스·쥬니퍼베리 부종 완화 롤온.\n부종이 있는 곳에 바르고 마사지해줍니다.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '레몬그라스', drops: 3 }, { name: '쥬니퍼베리', drops: 3 }, { name: '사이프러스', drops: 18 }],
+    notes: '부종이 있는 곳에 바르고 마사지해줍니다.'
+  },
+  {
+    id: 'r-225', name: '헤어컨디셔닝 스프레이', category: '피부',
+    description: '일랑일랑·로즈마리 헤어 컨디셔닝 스프레이.\n헤어에 뿌리고 스타일링합니다.',
+    refVolume: 0, carrier: '코코넛오일 2큰술 + 글리세린 2큰술 + 라벤더워터 4큰술 + 정제수 채우기',
+    ingredients: [{ name: '일랑일랑', drops: 5 }, { name: '로즈마리', drops: 5 }],
+    notes: '헤어에 뿌리고 스타일링한다. 총 100ml 기준.'
+  },
+  {
+    id: 'r-226', name: '호르몬 밸런스(갱년기)', category: '건강케어',
+    description: '클래리세이지·일랑일랑·로즈제라늄 갱년기 호르몬 롤온.\n향수처럼 바르세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '일랑일랑', drops: 5 }, { name: '라벤더', drops: 5 }, { name: '로즈제라늄', drops: 3 }, { name: '클래리세이지', drops: 10 }],
+    notes: '향수처럼 바르세요.'
+  },
+  {
+    id: 'r-227', name: '허브향 룸스프레이', category: '생활용품',
+    description: '레몬그라스·로즈마리·유칼립투스 허브향 룸스프레이.\n필요한 공간이나 섬유에 뿌립니다.',
+    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
+    ingredients: [{ name: '레몬그라스', drops: 2 }, { name: '로즈마리', drops: 3 }, { name: '유칼립투스', drops: 3 }],
+    notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
+  },
+  {
+    id: 'r-228', name: '탈모방지 롤온', category: '건강케어',
+    description: '로즈마리·시더우드·일랑일랑·라벤더 탈모 방지 롤온.\n샴푸 후 자기 전 두피에 바르세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '로즈마리', drops: 7 }, { name: '시더우드', drops: 7 }, { name: '일랑일랑', drops: 3 }, { name: '라벤더', drops: 5 }],
+    notes: '샴푸 후 자기 전 두피에 바르세요.'
+  },
+  {
+    id: 'r-229', name: '피부진정 (트러블·여드름)', category: '피부',
+    description: '라벤더·티트리 피부 트러블·여드름 진정 롤온.\n진정이 필요한 부분에 발라주세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '라벤더', drops: 15 }, { name: '티트리', drops: 20 }],
+    notes: '진정이 필요한 부분에 발라주세요.'
+  },
+  {
+    id: 'r-230', name: '집중(일·공부) 롤온', category: '집중력',
+    description: '오렌지·페퍼민트·로즈마리 집중력 향상 롤온.\n맥박이 뛰는 곳에 향수처럼 바르고 향을 맡으세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '오렌지', drops: 20 }, { name: '페퍼민트', drops: 10 }, { name: '로즈마리', drops: 5 }],
+    notes: '맥박이 뛰는 곳에 향수처럼 바르고 향을 맡으세요.'
+  },
+  {
+    id: 'r-231', name: '침구 스프레이 (숙면·릴렉스)', category: '수면',
+    description: '라벤더·캐모마일 숙면 유도 침구 스프레이.\n베개나 이불에 스프레이합니다.',
+    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
+    ingredients: [{ name: '라벤더', drops: 4 }, { name: '캐모마일', drops: 3 }],
+    notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
+  },
+  {
+    id: 'r-232', name: '편백(피톤치드) 스프레이', category: '생활용품',
+    description: '히노끼 피톤치드 공기 정화 룸스프레이.\n필요한 공간이나 섬유에 스프레이합니다.',
+    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
+    ingredients: [{ name: '히노끼', drops: 9 }],
+    notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
+  },
+  {
+    id: 'r-233', name: '에너지업 롤온', category: '스트레스',
+    description: '오렌지·레몬·버가못·페퍼민트 에너지 충전 롤온.\n향수처럼 바르고 향을 맡으세요.',
+    refVolume: 10, carrier: '코코넛오일 채우기',
+    ingredients: [{ name: '오렌지', drops: 10 }, { name: '레몬', drops: 10 }, { name: '버가못', drops: 5 }, { name: '페퍼민트', drops: 10 }],
+    notes: '향수처럼 바르고 향을 맡으세요.'
   }
 ];
