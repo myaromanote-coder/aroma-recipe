@@ -660,16 +660,16 @@ const BUILTIN_RECIPES = [
   },
   {
     id: 'r-210', name: '시트러스향 룸스프레이', category: '생활용품',
-    description: '라임·레몬·버가못의 상큼한 시트러스 룸스프레이.\n필요한 공간이나 섬유에 스프레이합니다.',
+    description: '라임·레몬·베르가못의 상큼한 시트러스 룸스프레이.\n필요한 공간이나 섬유에 스프레이합니다.',
     refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
-    ingredients: [{ name: '라임', drops: 3 }, { name: '레몬', drops: 4 }, { name: '버가못', drops: 4 }],
+    ingredients: [{ name: '라임', drops: 3 }, { name: '레몬', drops: 4 }, { name: '베르가못', drops: 4 }],
     notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
   },
   {
     id: 'r-211', name: '숙면.릴렉스 롤온', category: '수면',
-    description: '버가못·시더우드·프랑킨센스·라벤더 숙면 롤온.\n발바닥, 가슴, 목뒤, 손목에 바르세요.',
+    description: '베르가못·시더우드·프랑킨센스·라벤더 숙면 롤온.\n발바닥, 가슴, 목뒤, 손목에 바르세요.',
     refVolume: 10, carrier: '코코넛오일 채우기',
-    ingredients: [{ name: '버가못', drops: 10 }, { name: '시더우드', drops: 10 }, { name: '프랑킨센스', drops: 5 }, { name: '라벤더', drops: 5 }],
+    ingredients: [{ name: '베르가못', drops: 10 }, { name: '시더우드', drops: 10 }, { name: '프랑킨센스', drops: 5 }, { name: '라벤더', drops: 5 }],
     notes: '발바닥, 가슴, 목뒤, 손목에 바르세요.'
   },
   {
@@ -688,9 +688,9 @@ const BUILTIN_RECIPES = [
   },
   {
     id: 'r-214', name: '셀룰라이트(지방분해) 롤온', category: '피부',
-    description: '자몽·레몬·쥬니퍼베리 셀룰라이트 지방분해 롤온.\n해당 부위에 바르고 마사지하세요.',
+    description: '자몽·레몬·주니퍼베리 셀룰라이트 지방분해 롤온.\n해당 부위에 바르고 마사지하세요.',
     refVolume: 10, carrier: '코코넛오일 채우기',
-    ingredients: [{ name: '레몬', drops: 5 }, { name: '쥬니퍼베리', drops: 3 }, { name: '자몽', drops: 20 }],
+    ingredients: [{ name: '레몬', drops: 5 }, { name: '주니퍼베리', drops: 3 }, { name: '자몽', drops: 20 }],
     notes: '해당 부위에 바르고 마사지하세요.'
   },
   {
@@ -702,9 +702,9 @@ const BUILTIN_RECIPES = [
   },
   {
     id: 'r-216', name: '불안.걱정 롤온', category: '스트레스',
-    description: '버가못·라벤더·프랑킨센스·일랑일랑 불안 완화 롤온.\n향수처럼 맥박에 바르고 향을 맡으세요.',
+    description: '베르가못·라벤더·프랑킨센스·일랑일랑 불안 완화 롤온.\n향수처럼 맥박에 바르고 향을 맡으세요.',
     refVolume: 10, carrier: '코코넛오일 채우기',
-    ingredients: [{ name: '버가못', drops: 5 }, { name: '프랑킨센스', drops: 3 }, { name: '라벤더', drops: 4 }, { name: '일랑일랑', drops: 2 }],
+    ingredients: [{ name: '베르가못', drops: 5 }, { name: '프랑킨센스', drops: 3 }, { name: '라벤더', drops: 4 }, { name: '일랑일랑', drops: 2 }],
     notes: '향수처럼 맥박에 바르고 향을 맡으세요.'
   },
   {
@@ -716,9 +716,9 @@ const BUILTIN_RECIPES = [
   },
   {
     id: 'r-218', name: '생리증후군 롤온', category: '건강케어',
-    description: '클래리세이지·라벤더·일랑일랑·시더우드 생리 케어 롤온.\n생리 전후 목뒤, 가슴, 복부에 바르세요.',
+    description: '클라리세이지·라벤더·일랑일랑·시더우드 생리 케어 롤온.\n생리 전후 목뒤, 가슴, 복부에 바르세요.',
     refVolume: 10, carrier: '코코넛오일 채우기',
-    ingredients: [{ name: '클래리세이지', drops: 10 }, { name: '라벤더', drops: 8 }, { name: '일랑일랑', drops: 3 }, { name: '시더우드', drops: 5 }],
+    ingredients: [{ name: '클라리세이지', drops: 10 }, { name: '라벤더', drops: 8 }, { name: '일랑일랑', drops: 3 }, { name: '시더우드', drops: 5 }],
     notes: '생리 전후 목뒤, 가슴, 복부에 바르세요.'
   },
   {
@@ -737,9 +737,9 @@ const BUILTIN_RECIPES = [
   },
   {
     id: 'r-221', name: '안티스트레스 롤온', category: '스트레스',
-    description: '스피아민트·라임·자몽·라벤더 스트레스 해소 롤온.\n손목, 목, 관자놀이에 바르세요.',
+    description: '스피어민트·라임·자몽·라벤더 스트레스 해소 롤온.\n손목, 목, 관자놀이에 바르세요.',
     refVolume: 10, carrier: '코코넛오일 채우기',
-    ingredients: [{ name: '스피아민트', drops: 5 }, { name: '라임', drops: 10 }, { name: '자몽', drops: 10 }, { name: '라벤더', drops: 5 }],
+    ingredients: [{ name: '스피어민트', drops: 5 }, { name: '라임', drops: 10 }, { name: '자몽', drops: 10 }, { name: '라벤더', drops: 5 }],
     notes: ''
   },
   {
@@ -758,9 +758,9 @@ const BUILTIN_RECIPES = [
   },
   {
     id: 'r-224', name: '혈액순환.부종 롤온', category: '통증',
-    description: '사이프러스·레몬그라스·쥬니퍼베리 부종 완화 롤온.\n부종이 있는 곳에 바르고 마사지해줍니다.',
+    description: '사이프러스·레몬그라스·주니퍼베리 부종 완화 롤온.\n부종이 있는 곳에 바르고 마사지해줍니다.',
     refVolume: 10, carrier: '코코넛오일 채우기',
-    ingredients: [{ name: '레몬그라스', drops: 3 }, { name: '쥬니퍼베리', drops: 3 }, { name: '사이프러스', drops: 18 }],
+    ingredients: [{ name: '레몬그라스', drops: 3 }, { name: '주니퍼베리', drops: 3 }, { name: '사이프러스', drops: 18 }],
     notes: '부종이 있는 곳에 바르고 마사지해줍니다.'
   },
   {
@@ -772,9 +772,9 @@ const BUILTIN_RECIPES = [
   },
   {
     id: 'r-226', name: '호르몬 밸런스(갱년기)', category: '건강케어',
-    description: '클래리세이지·일랑일랑·로즈제라늄 갱년기 호르몬 롤온.\n향수처럼 바르세요.',
+    description: '클라리세이지·일랑일랑·로즈제라늄 갱년기 호르몬 롤온.\n향수처럼 바르세요.',
     refVolume: 10, carrier: '코코넛오일 채우기',
-    ingredients: [{ name: '일랑일랑', drops: 5 }, { name: '라벤더', drops: 5 }, { name: '로즈제라늄', drops: 3 }, { name: '클래리세이지', drops: 10 }],
+    ingredients: [{ name: '일랑일랑', drops: 5 }, { name: '라벤더', drops: 5 }, { name: '로즈제라늄', drops: 3 }, { name: '클라리세이지', drops: 10 }],
     notes: '향수처럼 바르세요.'
   },
   {
@@ -814,16 +814,16 @@ const BUILTIN_RECIPES = [
   },
   {
     id: 'r-232', name: '편백(피톤치드) 스프레이', category: '생활용품',
-    description: '히노끼 피톤치드 공기 정화 룸스프레이.\n필요한 공간이나 섬유에 스프레이합니다.',
+    description: '히노키 피톤치드 공기 정화 룸스프레이.\n필요한 공간이나 섬유에 스프레이합니다.',
     refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
-    ingredients: [{ name: '히노끼', drops: 9 }],
+    ingredients: [{ name: '히노키', drops: 9 }],
     notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
   },
   {
     id: 'r-233', name: '에너지업 롤온', category: '스트레스',
-    description: '오렌지·레몬·버가못·페퍼민트 에너지 충전 롤온.\n향수처럼 바르고 향을 맡으세요.',
+    description: '오렌지·레몬·베르가못·페퍼민트 에너지 충전 롤온.\n향수처럼 바르고 향을 맡으세요.',
     refVolume: 10, carrier: '코코넛오일 채우기',
-    ingredients: [{ name: '오렌지', drops: 10 }, { name: '레몬', drops: 10 }, { name: '버가못', drops: 5 }, { name: '페퍼민트', drops: 10 }],
+    ingredients: [{ name: '오렌지', drops: 10 }, { name: '레몬', drops: 10 }, { name: '베르가못', drops: 5 }, { name: '페퍼민트', drops: 10 }],
     notes: '향수처럼 바르고 향을 맡으세요.'
   }
 ];
