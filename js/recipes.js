@@ -96,7 +96,7 @@ const BUILTIN_RECIPES = [
     id: 'r-014', name: '수분에센스', category: '피부',
     description: '알로에베라겔 베이스 피부 수분 에센스.\n건조하고 당기는 피부 장벽 강화에 사용합니다.\n세안 후 토너 다음 단계에 적용하세요.',
     refVolume: 100, carrier: '알로에베라겔 80g + 코코넛오일 16g',
-    ingredients: [{ name: '코파이바', drops: 5 }, { name: '프랑킨센스', drops: 3 }, { name: '야로우품', drops: 10 }, { name: '로즈제라늄', drops: 3 }, { name: '하와이안 샌달우드', drops: 2 }],
+    ingredients: [{ name: '코파이바', drops: 10 }, { name: '프랑킨센스', drops: 5 }, { name: '야로우품', drops: 17 }, { name: '로즈제라늄', drops: 5 }, { name: '하와이안 샌달우드', drops: 3 }],
     notes: '에센셜오일 총 40방울, 3-4가지 선택 가능'
   },
   {
@@ -110,7 +110,7 @@ const BUILTIN_RECIPES = [
     id: 'r-016', name: '검버섯', category: '피부',
     description: '오레가노·라벤더로 검버섯 완화를 돕는 롤온.\n검버섯 부위에 소량 직접 도포하고\n자외선 차단제를 함께 사용하세요.',
     refVolume: 10, carrier: '코코넛오일 채우기',
-    ingredients: [{ name: '오레가노', drops: 3 }, { name: '라벤더', drops: 2 }],
+    ingredients: [{ name: '오레가노', drops: 6 }, { name: '라벤더', drops: 4 }],
     notes: '오레가노 2-4방울 조절 가능'
   },
   {
@@ -825,5 +825,40 @@ const BUILTIN_RECIPES = [
     refVolume: 10, carrier: '코코넛오일 채우기',
     ingredients: [{ name: '오렌지', drops: 10 }, { name: '레몬', drops: 10 }, { name: '베르가못', drops: 5 }, { name: '페퍼민트', drops: 10 }],
     notes: '향수처럼 바르고 향을 맡으세요.'
+  },
+  {
+    id: 'r-234', name: '밤회복크림', category: '피부',
+    description: '세레니티·시더우드 나이트 리셋 크림.\n잠들기 전 세안 후 얼굴에 적당량 바르세요.',
+    refVolume: 30, carrier: '크림베이스 30ml',
+    ingredients: [{ name: '세레니티', drops: 4 }, { name: '시더우드', drops: 1 }, { name: '비타민E', drops: 1 }, { name: '고분자 히알루론산', drops: 1 }],
+    notes: '취침 전 세안 후 적당량 바릅니다.'
+  },
+  {
+    id: 'r-235', name: '수분미스트', category: '피부',
+    description: '코파이바·프랑킨센스·일랑일랑·로즈제라늄 수분 페이셜 미스트.\n내 피부타입에 맞는 워터 베이스로 만드세요.\n(알로에베라워터·어성초워터·티트리워터·캐모마일워터·제라늄워터 중 선택)',
+    refVolume: 50, carrier: '워터 베이스 채우기',
+    ingredients: [{ name: '코파이바', drops: 3 }, { name: '프랑킨센스', drops: 3 }, { name: '일랑일랑', drops: 2 }, { name: '로즈제라늄', drops: 2 }],
+    notes: '워터 베이스에 오일 첨가 후 잘 흔들어 사용하세요.'
+  },
+  {
+    id: 'r-236', name: '바디클렌저 (건성)', category: '피부',
+    description: '시더우드·라벤더 건성 피부 천연 바디클렌저.\n샤워 시 적당량을 사용하세요.',
+    refVolume: 100, carrier: '캐스틸 비누 80ml + 글리세린 10ml',
+    ingredients: [{ name: '시더우드', drops: 10 }, { name: '라벤더', drops: 10 }],
+    notes: '캐스틸 비누와 글리세린 혼합 후 에센셜오일을 추가하세요.'
+  },
+  {
+    id: 'r-237', name: '바디클렌저 (수분부족 지성)', category: '피부',
+    description: '로즈제라늄·코파이바 수분부족 지성 피부 천연 바디클렌저.\n샤워 시 적당량을 사용하세요.',
+    refVolume: 100, carrier: '캐스틸 비누 80ml + 글리세린 10ml',
+    ingredients: [{ name: '로즈제라늄', drops: 10 }, { name: '코파이바', drops: 10 }],
+    notes: '캐스틸 비누와 글리세린 혼합 후 에센셜오일을 추가하세요.'
+  },
+  {
+    id: 'r-238', name: '바디클렌저 (지성)', category: '피부',
+    description: '티트리·라벤더 지성 피부 천연 바디클렌저.\n샤워 시 적당량을 사용하세요.',
+    refVolume: 100, carrier: '캐스틸 비누 80ml + 글리세린 10ml',
+    ingredients: [{ name: '티트리', drops: 10 }, { name: '라벤더', drops: 10 }],
+    notes: '캐스틸 비누와 글리세린 혼합 후 에센셜오일을 추가하세요.'
   }
 ];
