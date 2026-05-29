@@ -182,8 +182,16 @@
 
     document.getElementById('calcBody').innerHTML =
       ings.map(ing => {
-        const drops = recipe.refVolume > 0 ? Math.round((ing.drops || 0) * scale) : (ing.drops || 0);
-        return `<tr><td>${ing.name}</td><td class="drops-val">${drops}방울</td></tr>`;
+        let display;
+        if (ing.ml != null) {
+          const scaledMl = recipe.refVolume > 0 ? ing.ml * scale : ing.ml;
+          const rounded = Math.round(scaledMl * 10) / 10;
+          display = Number.isInteger(rounded) ? `${rounded}ml` : `${rounded.toFixed(1)}ml`;
+        } else {
+          const drops = recipe.refVolume > 0 ? Math.round((ing.drops || 0) * scale) : (ing.drops || 0);
+          display = `${drops}방울`;
+        }
+        return `<tr><td>${ing.name}</td><td class="drops-val">${display}</td></tr>`;
       }).join('') + carrierRow;
   }
 

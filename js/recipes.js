@@ -144,8 +144,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-021', name: '클렌징오일', category: '피부',
     description: '세 가지 캐리어오일 기반 클렌징오일.\n화장과 노폐물을 부드럽게 녹여냅니다.\n마른 피부에 마사지 후 물로 헹구세요.',
-    refVolume: 30, carrier: '올리브리퀴드 6ml + 호호바오일 12ml + 살구씨오일 12ml',
-    ingredients: [{ name: '라벤더', drops: 4 }, { name: '오렌지', drops: 4 }, { name: '레몬그라스', drops: 2 }],
+    refVolume: 30, carrier: '없음 (원액)',
+    ingredients: [{ name: '올리브리퀴드', ml: 6 }, { name: '호호바오일', ml: 12 }, { name: '살구씨오일', ml: 12 }, { name: '라벤더', drops: 4 }, { name: '오렌지', drops: 4 }, { name: '레몬그라스', drops: 2 }],
     notes: ''
   },
   {
