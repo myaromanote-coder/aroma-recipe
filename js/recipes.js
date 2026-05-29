@@ -40,7 +40,7 @@ const BUILTIN_RECIPES = [
     id: 'r-006', name: '셀룰라이트', category: '피부',
     description: '셀룰라이트 완화 바디 마사지오일.\n지몽·메타파워가 지방 분해를 돕습니다.\n목욕 후 마사지하듯 도포하세요.',
     refVolume: 100, carrier: '코코넛오일 채우기',
-    ingredients: [{ name: '지몽', drops: 30 }, { name: '메타파워', drops: 30 }, { name: '사이프레스', drops: 15 }, { name: '진저', drops: 15 }, { name: '파촐리', drops: 6 }, { name: '로즈제라늄', drops: 6 }],
+    ingredients: [{ name: '지몽', drops: 26 }, { name: '메타파워', drops: 26 }, { name: '사이프레스', drops: 13 }, { name: '진저', drops: 13 }, { name: '파촐리', drops: 5 }, { name: '로즈제라늄', drops: 5 }],
     notes: ''
   },
   {
