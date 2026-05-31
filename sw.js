@@ -1,4 +1,4 @@
-const CACHE = 'aroma-v3';
+const CACHE = 'aroma-v4';
 const BASE = '/aroma-recipe';
 const ASSETS = [
   BASE + '/',
