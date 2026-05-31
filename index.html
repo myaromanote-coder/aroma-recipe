@@ -28,6 +28,7 @@
         ❤️
         <span class="fav-badge" id="favBadge"></span>
       </a>
+      <a class="icon-btn" href="admin.html" id="adminBtn" title="관리자 설정" style="display:none">⚙️</a>
     </div>
   </div>
 </header>
@@ -83,10 +84,6 @@
     <span class="nav-icon">❤️</span>
     <span>즐겨찾기</span>
   </a>
-  <a class="nav-tab" href="admin.html">
-    <span class="nav-icon">⚙️</span>
-    <span>관리</span>
-  </a>
 </nav>
 
 <!-- 토스트 -->
@@ -96,8 +93,9 @@
 <script src="js/db.js"></script>
 <script src="js/main.js"></script>
 <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js');
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');
+  if (localStorage.getItem('aroma_role') === 'admin') {
+    document.getElementById('adminBtn').style.display = '';
   }
 </script>
 </body>

@@ -22,6 +22,7 @@
     <div class="header-actions">
       <a class="icon-btn" href="index.html" title="검색">🔍</a>
       <a class="icon-btn" href="favorites.html" title="즐겨찾기">❤️</a>
+      <a class="icon-btn" href="admin.html" id="adminBtn" title="관리자 설정" style="display:none">⚙️</a>
     </div>
   </div>
 </header>
@@ -89,7 +90,6 @@
 <nav class="bottom-nav">
   <a class="nav-tab" href="index.html"><span class="nav-icon">🏠</span><span>홈</span></a>
   <a class="nav-tab" href="favorites.html"><span class="nav-icon">❤️</span><span>즐겨찾기</span></a>
-  <a class="nav-tab" href="admin.html"><span class="nav-icon">⚙️</span><span>관리</span></a>
 </nav>
 
 <div class="toast" id="toast"></div>
@@ -97,6 +97,11 @@
 <script src="js/recipes.js"></script>
 <script src="js/db.js"></script>
 <script src="js/recipe.js"></script>
-<script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
+<script>
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');
+  if (localStorage.getItem('aroma_role') === 'admin') {
+    document.getElementById('adminBtn').style.display = '';
+  }
+</script>
 </body>
 </html>
