@@ -137,8 +137,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-020', name: '햇빛 화상 진정 크림', category: '피부',
     description: '선번 후 피부를 빠르게 진정시키는 크림.\n알로에베라겔이 수분을, 라벤더·페퍼민트가 냉각을 돕습니다.\n자외선 노출 후 즉시 도포하세요.',
-    refVolume: 100, carrier: '없음 (원액)',
-    ingredients: [{name: '알로에베라겔', ml: 90}, { name: '라벤더', drops: 20 }, { name: '페퍼민트', drops: 10 }],
+    refVolume: 100, carrier: '알로에베라겔',
+    ingredients: [{ name: '라벤더', drops: 20 }, { name: '페퍼민트', drops: 10 }],
     notes: ''
   },
   {
@@ -568,9 +568,9 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-113', name: '섬유유연제 (버전3)', category: '생활용품',
     description: '백식초 기반 냄새 제거·유연 효과 천연 유연제.\n일주일 숙성 후 사용하면 더 효과적입니다.',
-    refVolume: 1000, carrier: '없음 (원액)',
-    ingredients: [{name: '백식초', ml: 1000}, { name: '온가드', drops: 30 }, { name: '라벤더', drops: 30 }, { name: '자몽(또는 오렌지/라임)', drops: 30 }],
-    notes: '한번에 10-20g 사용. 일주일 숙성 후 사용'
+    refVolume: 0, carrier: '백식초 1L',
+    ingredients: [{ name: '온가드', drops: 30 }, { name: '라벤더', drops: 30 }, { name: '자몽(또는 오렌지/라임)', drops: 30 }],
+    notes: '백식초 1L에 에센셜오일을 넣고 잘 섞어 사용. 한번에 10-20g 사용. 일주일 숙성 후 사용'
   },
   {
     id: 'r-114', name: '손소독제', category: '생활용품',
@@ -829,8 +829,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-234', name: '밤회복크림', category: '피부',
     description: '세레니티·시더우드 나이트 리셋 크림.\n잠들기 전 세안 후 얼굴에 적당량 바르세요.',
-    refVolume: 30, carrier: '없음 (원액)',
-    ingredients: [{name: '크림베이스', ml: 30}, { name: '세레니티', drops: 4 }, { name: '시더우드', drops: 1 }, { name: '비타민E', drops: 1 }, { name: '고분자 히알루론산', drops: 1 }],
+    refVolume: 30, carrier: '크림베이스',
+    ingredients: [{ name: '세레니티', drops: 4 }, { name: '시더우드', drops: 1 }, { name: '비타민E', drops: 1 }, { name: '고분자 히알루론산', drops: 1 }],
     notes: '취침 전 세안 후 적당량 바릅니다.'
   },
   {
