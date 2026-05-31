@@ -554,21 +554,21 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-111', name: '섬유유연제 (버전1)', category: '생활용품',
     description: '구연산 기반 천연 섬유유연제.\n레몬·오렌지·페퍼민트 향으로 세탁물을 상쾌하게 합니다.',
-    refVolume: 0, carrier: '정제수 채우기',
+    refVolume: 0, baseLabel: '1L 기준', carrier: '정제수 채우기',
     ingredients: [{ name: '구연산', ml: 100 }, { name: '레몬', drops: 10 }, { name: '오렌지', drops: 10 }, { name: '페퍼민트', drops: 10 }],
     notes: '올리브리퀴드 소량으로 구연산+오일을 먼저 섞은 후 정제수로 채우기'
   },
   {
     id: 'r-112', name: '섬유유연제 (버전2)', category: '생활용품',
     description: '온가드 항균 기반 천연 섬유유연제.\n라벤더·자몽 향으로 세탁물을 상쾌하게 합니다.',
-    refVolume: 0, carrier: '정제수 채우기',
+    refVolume: 0, baseLabel: '1L 기준', carrier: '정제수 채우기',
     ingredients: [{ name: '구연산', ml: 10 }, { name: '올리브리퀴드', ml: 30 }, { name: '온가드', drops: 30 }, { name: '라벤더', drops: 30 }, { name: '자몽', drops: 30 }],
     notes: '구연산+올리브리퀴드를 먼저 섞은 후 에센셜오일 추가, 정제수로 채우기. 자몽 대신 오렌지·라임 대체 가능'
   },
   {
     id: 'r-113', name: '섬유유연제 (버전3)', category: '생활용품',
     description: '백식초 기반 냄새 제거·유연 효과 천연 유연제.\n일주일 숙성 후 사용하면 더 효과적입니다.',
-    refVolume: 0, carrier: '백식초 1L',
+    refVolume: 0, baseLabel: '1L 기준', carrier: '백식초 1L',
     ingredients: [{ name: '온가드', drops: 30 }, { name: '라벤더', drops: 30 }, { name: '자몽(또는 오렌지/라임)', drops: 30 }],
     notes: '백식초 1L에 에센셜오일을 넣고 잘 섞어 사용. 한번에 10-20g 사용. 일주일 숙성 후 사용'
   },

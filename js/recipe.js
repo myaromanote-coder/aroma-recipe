@@ -192,6 +192,8 @@
     const summaryEl = document.getElementById('calcSummary');
     if (recipe.refVolume > 0) {
       summaryEl.textContent = `${targetVolume}ml 기준 | 에센셜오일 총 ${totalDrops}방울`;
+    } else if (recipe.baseLabel) {
+      summaryEl.textContent = `${recipe.baseLabel} | 에센셜오일 총 ${refDrops}방울`;
     } else {
       summaryEl.textContent = `에센셜오일 총 ${refDrops}방울`;
     }
