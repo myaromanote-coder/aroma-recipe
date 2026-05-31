@@ -540,8 +540,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-109', name: '청소용 스프레이', category: '생활용품',
     description: '온가드·레몬 항균 청소 스프레이.\n주방, 화장실, 도마 등에 활용합니다.',
-    refVolume: 100, carrier: '없음 (원액)',
-    ingredients: [{name: '발향베이스', ml: 75}, { name: '온가드', drops: 15 }, { name: '레몬', drops: 15 }, { name: '티트리', drops: 12 }],
+    refVolume: 100, carrier: '발향베이스',
+    ingredients: [{ name: '온가드', drops: 15 }, { name: '레몬', drops: 15 }, { name: '티트리', drops: 12 }],
     notes: '온가드 다목적 세정제 15ml 추가'
   },
   {
