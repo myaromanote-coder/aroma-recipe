@@ -9,6 +9,7 @@
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icons/icon-192.svg">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/auth.js"></script>
 </head>
 <body>
 
@@ -19,6 +20,10 @@
       <span class="logo-emoji">🌿</span>
       <span>아로마 레시피</span>
     </a>
+    <button onclick="localStorage.removeItem('aroma_auth'); location.reload();"
+      style="background:none;border:1px solid #ccc;border-radius:8px;padding:5px 12px;font-size:0.8rem;color:#888;cursor:pointer;">
+      🔒 로그아웃
+    </button>
   </div>
 </header>
 
