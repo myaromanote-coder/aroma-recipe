@@ -95,8 +95,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-014', name: '수분에센스', category: '피부',
     description: '알로에베라겔 베이스 피부 수분 에센스.\n건조하고 당기는 피부 장벽 강화에 사용합니다.\n세안 후 토너 다음 단계에 적용하세요.',
-    refVolume: 100, carrier: '알로에베라겔 80g + 코코넛오일 16g',
-    ingredients: [{ name: '코파이바', drops: 10 }, { name: '프랑킨센스', drops: 5 }, { name: '야로우품', drops: 17 }, { name: '로즈제라늄', drops: 5 }, { name: '하와이안 샌달우드', drops: 3 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '알로에베라겔', ml: 80}, {name: '코코넛오일', ml: 16}, { name: '코파이바', drops: 10 }, { name: '프랑킨센스', drops: 5 }, { name: '야로우품', drops: 17 }, { name: '로즈제라늄', drops: 5 }, { name: '하와이안 샌달우드', drops: 3 }],
     notes: '에센셜오일 총 40방울, 3-4가지 선택 가능'
   },
   {
@@ -137,8 +137,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-020', name: '햇빛 화상 진정 크림', category: '피부',
     description: '선번 후 피부를 빠르게 진정시키는 크림.\n알로에베라겔이 수분을, 라벤더·페퍼민트가 냉각을 돕습니다.\n자외선 노출 후 즉시 도포하세요.',
-    refVolume: 100, carrier: '알로에베라겔 90g',
-    ingredients: [{ name: '라벤더', drops: 20 }, { name: '페퍼민트', drops: 10 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '알로에베라겔', ml: 90}, { name: '라벤더', drops: 20 }, { name: '페퍼민트', drops: 10 }],
     notes: ''
   },
   {
@@ -151,8 +151,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-022', name: '헤어 에센스', category: '피부',
     description: '건조하고 갈라진 모발 케어 에센스.\n시더우드로 두피, 페퍼민트로 청량감을 더합니다.\n머리카락 중간~끝에만 소량 바르세요.',
-    refVolume: 50, carrier: '코코넛오일 50% + 정제수 50% + 글리세린 20방울',
-    ingredients: [{ name: '시더우드', drops: 5 }, { name: '라벤더', drops: 3 }, { name: '오렌지', drops: 4 }, { name: '페퍼민트', drops: 2 }],
+    refVolume: 50, carrier: '없음 (원액)',
+    ingredients: [{name: '코코넛오일', ml: 25}, {name: '정제수', ml: 25}, { name: '시더우드', drops: 5 }, { name: '라벤더', drops: 3 }, { name: '오렌지', drops: 4 }, { name: '페퍼민트', drops: 2 }],
     notes: '코코넛오일 비율 줄이면 덜 기름짐'
   },
   {
@@ -200,8 +200,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-126', name: '멀티밤', category: '피부',
     description: '비즈왁스+코코넛오일+에센셜오일 만능 밤.\n입술, 큐티클, 건조 부위 어디에나 사용합니다.\n65~70도에서 오일을 넣어야 효능을 보존합니다.',
-    refVolume: 0, carrier: '코코넛오일 6g + 스윗아몬드오일 6g + 비즈왁스 10g',
-    ingredients: [{ name: '원하는 오일 2-3가지', drops: 12 }],
+    refVolume: 0, carrier: '없음 (원액)',
+    ingredients: [{name: '코코넛오일', ml: 6}, {name: '스윗아몬드오일', ml: 6}, {name: '비즈왁스', ml: 10}, { name: '원하는 오일 2-3가지', drops: 12 }],
     notes: '어린이용: 라벤더 3방울+프랑킨센스 2방울'
   },
   {
@@ -325,15 +325,15 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-055', name: '항균 스프레이', category: '호흡기',
     description: '공간·물건 항균 소독 스프레이.\n도어 손잡이, 화장실, 주방 등에 뿌립니다.',
-    refVolume: 100, carrier: '정제수 50% + 발향베이스 50%',
-    ingredients: [{ name: '온가드', drops: 20 }, { name: '티트리', drops: 10 }, { name: '레몬', drops: 10 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '발향베이스', ml: 50}, { name: '온가드', drops: 20 }, { name: '티트리', drops: 10 }, { name: '레몬', drops: 10 }],
     notes: ''
   },
   {
     id: 'r-056', name: '철벽 스프레이 (바이러스)', category: '호흡기',
     description: '오레가노·타임·클로브 강력 항바이러스 조합.\n바이러스 유행 시즌에 공간에 뿌려 사용합니다.',
-    refVolume: 100, carrier: '정제수 50% + 발향베이스 50%',
-    ingredients: [{ name: '오레가노', drops: 10 }, { name: '타임', drops: 10 }, { name: '클로브', drops: 10 }, { name: '레몬', drops: 10 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '발향베이스', ml: 50}, { name: '오레가노', drops: 10 }, { name: '타임', drops: 10 }, { name: '클로브', drops: 10 }, { name: '레몬', drops: 10 }],
     notes: '온가드 대체 가능'
   },
   {
@@ -348,22 +348,22 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-060', name: '숙면 스프레이 (일반)', category: '수면',
     description: '세레니티·이지에어 수면 유도 침구 스프레이.\n취침 30분 전 베개·침구에 뿌려두세요.\n아이들에게도 사용 가능합니다.',
-    refVolume: 100, carrier: '정제수 50% + 발향베이스 50%',
-    ingredients: [{ name: '세레니티', drops: 14 }, { name: '이지에어', drops: 14 }, { name: '티트리', drops: 6 }, { name: '레몬', drops: 6 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '발향베이스', ml: 50}, { name: '세레니티', drops: 14 }, { name: '이지에어', drops: 14 }, { name: '티트리', drops: 6 }, { name: '레몬', drops: 6 }],
     notes: ''
   },
   {
     id: 'r-061', name: '숙면 스프레이 (목직한 향)', category: '수면',
     description: '라벤더·로만캐모마일의 묵직한 향 수면 스프레이.\n깊고 진한 향을 선호하는 분에게 추천합니다.',
-    refVolume: 100, carrier: '정제수 50% + 발향베이스 50%',
-    ingredients: [{ name: '라벤더', drops: 16 }, { name: '오렌지', drops: 10 }, { name: '시더우드', drops: 8 }, { name: '로만캐모마일', drops: 6 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '발향베이스', ml: 50}, { name: '라벤더', drops: 16 }, { name: '오렌지', drops: 10 }, { name: '시더우드', drops: 8 }, { name: '로만캐모마일', drops: 6 }],
     notes: ''
   },
   {
     id: 'r-062', name: '침구용 스프레이', category: '수면',
     description: '수면·호흡기·방충 다기능 침구 스프레이.\n취침 전 이불과 베개에 뿌리세요.',
-    refVolume: 100, carrier: '정제수 50% + 발향베이스 50%',
-    ingredients: [{ name: '라벤더', drops: 18 }, { name: '유칼립투스', drops: 7 }, { name: '페퍼민트', drops: 7 }, { name: '오렌지', drops: 7 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '발향베이스', ml: 50}, { name: '라벤더', drops: 18 }, { name: '유칼립투스', drops: 7 }, { name: '페퍼민트', drops: 7 }, { name: '오렌지', drops: 7 }],
     notes: ''
   },
 
@@ -371,15 +371,15 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-070', name: '스트레스케어 스프레이', category: '스트레스',
     description: '밸런스·베르가못 스트레스 완화 공간 스프레이.\n업무 공간, 침실에 뿌려 심리 안정감을 조성합니다.',
-    refVolume: 100, carrier: '정제수 50% + 발향베이스 50%',
-    ingredients: [{ name: '밸런스', drops: 10 }, { name: '베르가못', drops: 10 }, { name: '어댑티브', drops: 10 }, { name: '시트러스블리스', drops: 10 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '발향베이스', ml: 50}, { name: '밸런스', drops: 10 }, { name: '베르가못', drops: 10 }, { name: '어댑티브', drops: 10 }, { name: '시트러스블리스', drops: 10 }],
     notes: '오렌지 대체 가능'
   },
   {
     id: 'r-071', name: '활력 스프레이', category: '스트레스',
     description: '시트러스블리스·페퍼민트 활력 충전 스프레이.\n아침이나 오후 슬럼프 시간에 뿌리세요.',
-    refVolume: 100, carrier: '정제수 50% + 발향베이스 50%',
-    ingredients: [{ name: '시트러스블리스', drops: 14 }, { name: '자몽', drops: 14 }, { name: '페퍼민트', drops: 6 }, { name: '시더우드', drops: 6 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '발향베이스', ml: 50}, { name: '시트러스블리스', drops: 14 }, { name: '자몽', drops: 14 }, { name: '페퍼민트', drops: 6 }, { name: '시더우드', drops: 6 }],
     notes: ''
   },
 
@@ -387,8 +387,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-080', name: '집중력 공부방 스프레이', category: '집중력',
     description: '집중력·기억력 향상 공간 스프레이.\n공부방, 사무실에 뿌려 맑은 머리를 유지하세요.\n시험 준비, 중요한 업무 전 사용을 권장합니다.',
-    refVolume: 100, carrier: '정제수 50% + 발향베이스 50%',
-    ingredients: [{ name: '밸런스', drops: 14 }, { name: '레몬', drops: 14 }, { name: '페퍼민트', drops: 6 }, { name: '로즈마리', drops: 6 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '발향베이스', ml: 50}, { name: '밸런스', drops: 14 }, { name: '레몬', drops: 14 }, { name: '페퍼민트', drops: 6 }, { name: '로즈마리', drops: 6 }],
     notes: ''
   },
 
@@ -417,8 +417,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-093', name: '감정향수 퍼퓸', category: '향수',
     description: '발향베이스로 만드는 스프레이 타입 향수.\n일반 향수처럼 옷이나 피부에 뿌려 사용합니다.',
-    refVolume: 10, carrier: '정제수 50% + 발향베이스 50%',
-    ingredients: [{ name: '원하는 오일 3가지', drops: 5 }],
+    refVolume: 10, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 5}, {name: '발향베이스', ml: 5}, { name: '원하는 오일 3가지', drops: 5 }],
     notes: ''
   },
 
@@ -433,15 +433,15 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-107', name: '천연데오드란트', category: '건강케어',
     description: '파촐리·사이프레스·로즈제라늄 천연 데오드란트.\n파촐리가 냄새를, 사이프레스가 땀을 조절합니다.\n겨드랑이에 뿌리세요.',
-    refVolume: 100, carrier: '정제수 60% + 발향베이스 40%',
-    ingredients: [{ name: '파촐리', drops: 20 }, { name: '사이프레스', drops: 20 }, { name: '로즈제라늄', drops: 20 }, { name: '유칼립투스', drops: 10 }, { name: '티트리', drops: 10 }, { name: '레몬', drops: 10 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 60}, {name: '발향베이스', ml: 40}, { name: '파촐리', drops: 20 }, { name: '사이프레스', drops: 20 }, { name: '로즈제라늄', drops: 20 }, { name: '유칼립투스', drops: 10 }, { name: '티트리', drops: 10 }, { name: '레몬', drops: 10 }],
     notes: ''
   },
   {
     id: 'r-115', name: '여성 청결제', category: '건강케어',
     description: '오렌지 오일로 상쾌함을 더한 천연 여성 청결제.\n순한 성분으로 매일 사용할 수 있습니다.',
-    refVolume: 30, carrier: '정제수 50% + 온가드 핸드위시 50%',
-    ingredients: [{ name: '오렌지', drops: 4 }],
+    refVolume: 30, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 15}, {name: '온가드 핸드위시', ml: 15}, { name: '오렌지', drops: 4 }],
     notes: '오렌지 3-5방울 조절'
   },
   {
@@ -491,57 +491,57 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-101', name: '모기 퇴치제 (강력)', category: '생활용품',
     description: '레몬유칼립투스·레몬그라스 강력 방충 스프레이.\n옷 위에 뿌리는 강력 버전입니다.\n캠핑, 야외 활동 시 사용하세요.',
-    refVolume: 100, carrier: '정제수 50% + 발향베이스 50%',
-    ingredients: [{ name: '레몬유칼립투스', drops: 20 }, { name: '레몬그라스', drops: 20 }, { name: '페퍼민트', drops: 10 }, { name: '라벤더', drops: 8 }, { name: '유칼립투스', drops: 10 }, { name: '시나몬바크', drops: 5 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '발향베이스', ml: 50}, { name: '레몬유칼립투스', drops: 20 }, { name: '레몬그라스', drops: 20 }, { name: '페퍼민트', drops: 10 }, { name: '라벤더', drops: 8 }, { name: '유칼립투스', drops: 10 }, { name: '시나몬바크', drops: 5 }],
     notes: '멜리사 대체 가능'
   },
   {
     id: 'r-102', name: '벌레 퇴치제 (버전1)', category: '생활용품',
     description: '테라쉴드 기반 순한 벌레 퇴치 스프레이.\n일상 야외 활동 시 피부와 옷에 뿌립니다.',
-    refVolume: 100, carrier: '정제수 50% + 발향베이스 50%',
-    ingredients: [{ name: '테라쉴드', drops: 20 }, { name: '레몬유칼립투스', drops: 10 }, { name: '레몬그라스', drops: 10 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '발향베이스', ml: 50}, { name: '테라쉴드', drops: 20 }, { name: '레몬유칼립투스', drops: 10 }, { name: '레몬그라스', drops: 10 }],
     notes: ''
   },
   {
     id: 'r-103', name: '벌레 퇴치제 (버전2)', category: '생활용품',
     description: '로즈제라늄을 추가한 향 좋은 벌레 퇴치 스프레이.\n아이와 함께하는 야외 활동에 적합합니다.',
-    refVolume: 100, carrier: '정제수 50% + 발향베이스 50%',
-    ingredients: [{ name: '테라쉴드', drops: 18 }, { name: '레몬유칼립투스', drops: 8 }, { name: '레몬그라스', drops: 8 }, { name: '로즈제라늄', drops: 6 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '발향베이스', ml: 50}, { name: '테라쉴드', drops: 18 }, { name: '레몬유칼립투스', drops: 8 }, { name: '레몬그라스', drops: 8 }, { name: '로즈제라늄', drops: 6 }],
     notes: ''
   },
   {
     id: 'r-104', name: '숲속향 스프레이', category: '생활용품',
     description: '히노키·사이프레스 피톤치드 실내 삼림욕 스프레이.\n거실, 사무실에 뿌려 맑은 공기를 만들어줍니다.',
-    refVolume: 100, carrier: '정제수 50% + 발향베이스 50%',
-    ingredients: [{ name: '히노키', drops: 10 }, { name: '사이프레스', drops: 10 }, { name: '포레스트베싱', drops: 10 }, { name: '레몬', drops: 10 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '발향베이스', ml: 50}, { name: '히노키', drops: 10 }, { name: '사이프레스', drops: 10 }, { name: '포레스트베싱', drops: 10 }, { name: '레몬', drops: 10 }],
     notes: '클리어리파이/시베리안퍼, 오렌지 대체 가능'
   },
   {
     id: 'r-105', name: '섬유탈취제 (라벤더)', category: '생활용품',
     description: '라벤더·퓨리파이 천연 섬유 탈취 스프레이.\n소파, 카펫, 옷에 뿌려 탈취 효과를 누리세요.',
-    refVolume: 100, carrier: '정제수 50% + 발향베이스 50%',
-    ingredients: [{ name: '라벤더', drops: 15 }, { name: '퓨리파이', drops: 15 }, { name: '레몬그라스', drops: 10 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '발향베이스', ml: 50}, { name: '라벤더', drops: 15 }, { name: '퓨리파이', drops: 15 }, { name: '레몬그라스', drops: 10 }],
     notes: ''
   },
   {
     id: 'r-106', name: '섬유탈취제 (상쾌)', category: '생활용품',
     description: '유칼립투스·레몬 향 섬유 탈취 스프레이.\n운동복, 이불 냄새 제거에 사용합니다.',
-    refVolume: 100, carrier: '정제수 50% + 발향베이스 50%',
-    ingredients: [{ name: '유칼립투스', drops: 10 }, { name: '티트리', drops: 10 }, { name: '레몬', drops: 20 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '발향베이스', ml: 50}, { name: '유칼립투스', drops: 10 }, { name: '티트리', drops: 10 }, { name: '레몬', drops: 20 }],
     notes: ''
   },
   {
     id: 'r-108', name: '공기정화 스프레이', category: '생활용품',
     description: '클리어리파이·히노키 공기 정화 스프레이.\n환절기, 외출 후 집 안 공기 정화에 사용하세요.',
-    refVolume: 100, carrier: '정제수 50% + 발향베이스 50%',
-    ingredients: [{ name: '클리어리파이', drops: 10 }, { name: '히노키', drops: 10 }, { name: '사이프레스', drops: 10 }, { name: '레몬', drops: 10 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '발향베이스', ml: 50}, { name: '클리어리파이', drops: 10 }, { name: '히노키', drops: 10 }, { name: '사이프레스', drops: 10 }, { name: '레몬', drops: 10 }],
     notes: '레몬 대신 오렌지 가능'
   },
   {
     id: 'r-109', name: '청소용 스프레이', category: '생활용품',
     description: '온가드·레몬 항균 청소 스프레이.\n주방, 화장실, 도마 등에 활용합니다.',
-    refVolume: 100, carrier: '발향베이스 75ml',
-    ingredients: [{ name: '온가드', drops: 15 }, { name: '레몬', drops: 15 }, { name: '티트리', drops: 12 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '발향베이스', ml: 75}, { name: '온가드', drops: 15 }, { name: '레몬', drops: 15 }, { name: '티트리', drops: 12 }],
     notes: '온가드 다목적 세정제 15ml 추가'
   },
   {
@@ -568,22 +568,22 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-113', name: '섬유유연제 (버전3)', category: '생활용품',
     description: '백식초 기반 냄새 제거·유연 효과 천연 유연제.\n일주일 숙성 후 사용하면 더 효과적입니다.',
-    refVolume: 1000, carrier: '백식초 1L',
-    ingredients: [{ name: '온가드', drops: 30 }, { name: '라벤더', drops: 30 }, { name: '자몽(또는 오렌지/라임)', drops: 30 }],
+    refVolume: 1000, carrier: '없음 (원액)',
+    ingredients: [{name: '백식초', ml: 1000}, { name: '온가드', drops: 30 }, { name: '라벤더', drops: 30 }, { name: '자몽(또는 오렌지/라임)', drops: 30 }],
     notes: '한번에 10-20g 사용. 일주일 숙성 후 사용'
   },
   {
     id: 'r-114', name: '손소독제', category: '생활용품',
     description: '알로에베라겔 기반 촉촉한 천연 손소독제.\n온가드·티트리의 항균력으로 강력하게 살균합니다.',
-    refVolume: 100, carrier: '무수에탄올 40g + 알로에베라겔 60g + 히아루론산 1g',
-    ingredients: [{ name: '온가드', drops: 12 }, { name: '티트리', drops: 12 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '무수에탄올', ml: 40}, {name: '알로에베라겔', ml: 60}, {name: '히아루론산', ml: 1}, { name: '온가드', drops: 12 }, { name: '티트리', drops: 12 }],
     notes: ''
   },
   {
     id: 'r-116', name: '설거지비누', category: '생활용품',
     description: '온가드 항균·오렌지 세정력의 천연 설거지 비누.\n화학 성분 없이 깨끗하게 세척합니다.',
-    refVolume: 100, carrier: '비누베이스 100g + EM원액 10ml',
-    ingredients: [{ name: '온가드', drops: 2 }, { name: '오렌지', drops: 1 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{ name: '비누베이스', ml: 90 }, { name: 'EM원액', ml: 10 }, { name: '온가드', drops: 2 }, { name: '오렌지', drops: 1 }],
     notes: '레몬, 자몽 추가 가능. 65-70도에서 에센셜오일 넣기'
   },
 
@@ -626,8 +626,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-205', name: '다목적 청소 스프레이', category: '생활용품',
     description: '온가드·레몬 항균 다목적 청소 스프레이.\n청소가 필요한 곳에 뿌리고 닦아냅니다.',
-    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
-    ingredients: [{ name: '온가드', drops: 6 }, { name: '레몬', drops: 3 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, { name: '온가드', drops: 6 }, { name: '레몬', drops: 3 }],
     notes: '청소가 필요한 곳에 뿌리고 닦아낸다.'
   },
   {
@@ -654,15 +654,15 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-209', name: '호흡기 룸스프레이 (비염·미세먼지)', category: '호흡기',
     description: '유칼립투스·페퍼민트·티트리 호흡기 보호 룸스프레이.\n필요한 공간이나 섬유에 스프레이합니다.',
-    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
-    ingredients: [{ name: '유칼립투스', drops: 3 }, { name: '페퍼민트', drops: 2 }, { name: '레몬', drops: 2 }, { name: '티트리', drops: 2 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, { name: '유칼립투스', drops: 3 }, { name: '페퍼민트', drops: 2 }, { name: '레몬', drops: 2 }, { name: '티트리', drops: 2 }],
     notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
   },
   {
     id: 'r-210', name: '시트러스향 룸스프레이', category: '생활용품',
     description: '라임·레몬·베르가못의 상큼한 시트러스 룸스프레이.\n필요한 공간이나 섬유에 스프레이합니다.',
-    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
-    ingredients: [{ name: '라임', drops: 3 }, { name: '레몬', drops: 4 }, { name: '베르가못', drops: 4 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, { name: '라임', drops: 3 }, { name: '레몬', drops: 4 }, { name: '베르가못', drops: 4 }],
     notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
   },
   {
@@ -675,8 +675,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-212', name: '손소독제 스프레이', category: '생활용품',
     description: '온가드·오렌지 항균 손소독제 스프레이.\n필요할 때마다 손에 스프레이합니다.',
-    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
-    ingredients: [{ name: '온가드', drops: 5 }, { name: '오렌지', drops: 2 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, { name: '온가드', drops: 5 }, { name: '오렌지', drops: 2 }],
     notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
   },
   {
@@ -696,8 +696,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-215', name: '산뜻한 공기 룸스프레이', category: '생활용품',
     description: '페퍼민트·오렌지·유칼립투스·로즈마리 청량 룸스프레이.\n필요한 공간이나 섬유에 스프레이합니다.',
-    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
-    ingredients: [{ name: '페퍼민트', drops: 2 }, { name: '오렌지', drops: 3 }, { name: '유칼립투스', drops: 2 }, { name: '로즈마리', drops: 1 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, { name: '페퍼민트', drops: 2 }, { name: '오렌지', drops: 3 }, { name: '유칼립투스', drops: 2 }, { name: '로즈마리', drops: 1 }],
     notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
   },
   {
@@ -724,8 +724,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-219', name: '반려견 냄새제거 스프레이', category: '생활용품',
     description: '라벤더·오렌지·티트리·유칼립투스 반려견 냄새 제거.\n필요한 공간이나 섬유에 스프레이합니다.',
-    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
-    ingredients: [{ name: '라벤더', drops: 3 }, { name: '오렌지', drops: 3 }, { name: '티트리', drops: 2 }, { name: '유칼립투스', drops: 2 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, { name: '라벤더', drops: 3 }, { name: '오렌지', drops: 3 }, { name: '티트리', drops: 2 }, { name: '유칼립투스', drops: 2 }],
     notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
   },
   {
@@ -780,8 +780,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-227', name: '허브향 룸스프레이', category: '생활용품',
     description: '레몬그라스·로즈마리·유칼립투스 허브향 룸스프레이.\n필요한 공간이나 섬유에 뿌립니다.',
-    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
-    ingredients: [{ name: '레몬그라스', drops: 2 }, { name: '로즈마리', drops: 3 }, { name: '유칼립투스', drops: 3 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, { name: '레몬그라스', drops: 2 }, { name: '로즈마리', drops: 3 }, { name: '유칼립투스', drops: 3 }],
     notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
   },
   {
@@ -808,15 +808,15 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-231', name: '침구 스프레이 (숙면·릴렉스)', category: '수면',
     description: '라벤더·캐모마일 숙면 유도 침구 스프레이.\n베개나 이불에 스프레이합니다.',
-    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
-    ingredients: [{ name: '라벤더', drops: 4 }, { name: '캐모마일', drops: 3 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, { name: '라벤더', drops: 4 }, { name: '캐모마일', drops: 3 }],
     notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
   },
   {
     id: 'r-232', name: '편백(피톤치드) 스프레이', category: '생활용품',
     description: '히노키 피톤치드 공기 정화 룸스프레이.\n필요한 공간이나 섬유에 스프레이합니다.',
-    refVolume: 100, carrier: '정제수 50ml + 식물성에탄올 50ml',
-    ingredients: [{ name: '히노키', drops: 9 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, { name: '히노키', drops: 9 }],
     notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
   },
   {
@@ -829,8 +829,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-234', name: '밤회복크림', category: '피부',
     description: '세레니티·시더우드 나이트 리셋 크림.\n잠들기 전 세안 후 얼굴에 적당량 바르세요.',
-    refVolume: 30, carrier: '크림베이스 30ml',
-    ingredients: [{ name: '세레니티', drops: 4 }, { name: '시더우드', drops: 1 }, { name: '비타민E', drops: 1 }, { name: '고분자 히알루론산', drops: 1 }],
+    refVolume: 30, carrier: '없음 (원액)',
+    ingredients: [{name: '크림베이스', ml: 30}, { name: '세레니티', drops: 4 }, { name: '시더우드', drops: 1 }, { name: '비타민E', drops: 1 }, { name: '고분자 히알루론산', drops: 1 }],
     notes: '취침 전 세안 후 적당량 바릅니다.'
   },
   {
@@ -843,22 +843,22 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-236', name: '바디클렌저 (건성)', category: '피부',
     description: '시더우드·라벤더 건성 피부 천연 바디클렌저.\n샤워 시 적당량을 사용하세요.',
-    refVolume: 100, carrier: '캐스틸 비누 80ml + 글리세린 10ml',
-    ingredients: [{ name: '시더우드', drops: 10 }, { name: '라벤더', drops: 10 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '캐스틸 비누', ml: 80}, {name: '글리세린', ml: 10}, { name: '시더우드', drops: 10 }, { name: '라벤더', drops: 10 }],
     notes: '캐스틸 비누와 글리세린 혼합 후 에센셜오일을 추가하세요.'
   },
   {
     id: 'r-237', name: '바디클렌저 (수분부족 지성)', category: '피부',
     description: '로즈제라늄·코파이바 수분부족 지성 피부 천연 바디클렌저.\n샤워 시 적당량을 사용하세요.',
-    refVolume: 100, carrier: '캐스틸 비누 80ml + 글리세린 10ml',
-    ingredients: [{ name: '로즈제라늄', drops: 10 }, { name: '코파이바', drops: 10 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '캐스틸 비누', ml: 80}, {name: '글리세린', ml: 10}, { name: '로즈제라늄', drops: 10 }, { name: '코파이바', drops: 10 }],
     notes: '캐스틸 비누와 글리세린 혼합 후 에센셜오일을 추가하세요.'
   },
   {
     id: 'r-238', name: '바디클렌저 (지성)', category: '피부',
     description: '티트리·라벤더 지성 피부 천연 바디클렌저.\n샤워 시 적당량을 사용하세요.',
-    refVolume: 100, carrier: '캐스틸 비누 80ml + 글리세린 10ml',
-    ingredients: [{ name: '티트리', drops: 10 }, { name: '라벤더', drops: 10 }],
+    refVolume: 100, carrier: '없음 (원액)',
+    ingredients: [{name: '캐스틸 비누', ml: 80}, {name: '글리세린', ml: 10}, { name: '티트리', drops: 10 }, { name: '라벤더', drops: 10 }],
     notes: '캐스틸 비누와 글리세린 혼합 후 에센셜오일을 추가하세요.'
   },
   {
@@ -1102,8 +1102,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-273', name: '배쏘 볼/배쏘 파우더', category: '생활용품',
     description: '시트러스블리스·스피어민트·베르가못·베티버 입욕볼/파우더.\n베이킹소다·구연산·옥수수전분을 섞은 파우더 기준입니다.',
-    refVolume: 0, carrier: '베이킹소다 100g+구연산 100g+옥수수전분 50g',
-    ingredients: [{name: '시트러스블리스', drops: 15}, {name: '스피어민트', drops: 5}, {name: '베르가못', drops: 5}, {name: '베티버', drops: 3}],
+    refVolume: 0, carrier: '없음 (원액)',
+    ingredients: [{name: '베이킹소다', ml: 100}, {name: '구연산', ml: 100}, {name: '옥수수전분', ml: 50}, {name: '시트러스블리스', drops: 15}, {name: '스피어민트', drops: 5}, {name: '베르가못', drops: 5}, {name: '베티버', drops: 3}],
     notes: '배쏘 볼: 파우더들을 스프레이로 물을 조금씩 뿌리면서 뭉친 후 랩에 싸서 보관합니다.\n배쏘 파우더: 볼 모양으로 뭉치는 과정 없이 파우더 형태로 보관합니다.'
   },
   {
@@ -1508,8 +1508,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-331', name: '만능 밤', category: '피부',
     description: '오렌지·라벤더·시더우드 만능 밤.\n입술, 손, 얼굴, 팔꿈치, 발뒤꿈치 등에 만능으로 사용합니다.',
-    refVolume: 15, carrier: '코코넛오일 13g + 밀랍 3.5g',
-    ingredients: [{name: '오렌지', drops: 3}, {name: '라벤더', drops: 3}, {name: '시더우드', drops: 1}],
+    refVolume: 15, carrier: '없음 (원액)',
+    ingredients: [{name: '코코넛오일', ml: 13}, {name: '밀랍', ml: 3.5}, {name: '오렌지', drops: 3}, {name: '라벤더', drops: 3}, {name: '시더우드', drops: 1}],
     notes: '코코넛 오일에 밀랍을 녹인 후 오일을 넣고 틴케이스에 담아 굳힙니다.'
   },
   {
