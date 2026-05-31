@@ -1,10 +1,11 @@
 (() => {
-  const PASS = 'aroma1740';
-  const KEY  = 'aroma_auth';
+  const PASS_USER  = 'aroma1740';
+  const PASS_ADMIN = 'admin1211';
+  const KEY_AUTH   = 'aroma_auth';
+  const KEY_ROLE   = 'aroma_role';
 
-  if (localStorage.getItem(KEY) === 'ok') return;
+  if (localStorage.getItem(KEY_AUTH) === 'ok') return;
 
-  // 스타일 주입
   const style = document.createElement('style');
   style.textContent = `
     #auth-overlay {
@@ -13,38 +14,32 @@
       display: flex; align-items: center; justify-content: center;
     }
     .auth-card {
-      background: #fff;
-      border-radius: 20px;
-      padding: 44px 32px 36px;
-      text-align: center;
+      background: #fff; border-radius: 20px;
+      padding: 44px 32px 36px; text-align: center;
       max-width: 320px; width: 90%;
       box-shadow: 0 6px 24px rgba(90,60,150,0.13);
     }
     .auth-logo { font-size: 52px; margin-bottom: 10px; }
     .auth-title { color: #5C3D99; font-size: 1.3rem; font-weight: 700; margin: 0 0 6px; }
-    .auth-sub { color: #999; font-size: 0.85rem; margin: 0 0 24px; }
+    .auth-sub   { color: #999; font-size: 0.85rem; margin: 0 0 24px; }
     #auth-pw {
       width: 100%; box-sizing: border-box;
       padding: 13px 16px; margin-bottom: 12px;
       border: 1.5px solid #D8CFF0; border-radius: 10px;
-      font-size: 1rem; outline: none;
-      transition: border-color .2s;
+      font-size: 1rem; outline: none; transition: border-color .2s;
     }
     #auth-pw:focus { border-color: #7B6FA0; }
-    #auth-pw.error { border-color: #e74c3c; animation: shake .3s; }
+    #auth-pw.error { border-color: #e74c3c; animation: auth-shake .3s; }
     #auth-btn {
       width: 100%; padding: 13px;
       background: #7B6FA0; color: #fff;
       border: none; border-radius: 10px;
       font-size: 1rem; font-weight: 600; cursor: pointer;
-      transition: background .2s;
     }
     #auth-btn:hover { background: #5C3D99; }
     #auth-err { color: #e74c3c; font-size: 0.8rem; margin: 10px 0 0; min-height: 16px; }
-    @keyframes shake {
-      0%,100%{transform:translateX(0)}
-      25%{transform:translateX(-6px)}
-      75%{transform:translateX(6px)}
+    @keyframes auth-shake {
+      0%,100%{transform:translateX(0)} 25%{transform:translateX(-6px)} 75%{transform:translateX(6px)}
     }
   `;
   document.head.appendChild(style);
@@ -63,9 +58,15 @@
   `;
 
   function tryLogin() {
-    const pw = document.getElementById('auth-pw');
-    if (pw.value === PASS) {
-      localStorage.setItem(KEY, 'ok');
+    const pw  = document.getElementById('auth-pw');
+    const val = pw.value;
+    if (val === PASS_ADMIN) {
+      localStorage.setItem(KEY_AUTH, 'ok');
+      localStorage.setItem(KEY_ROLE, 'admin');
+      overlay.remove();
+    } else if (val === PASS_USER) {
+      localStorage.setItem(KEY_AUTH, 'ok');
+      localStorage.setItem(KEY_ROLE, 'user');
       overlay.remove();
     } else {
       pw.value = '';
