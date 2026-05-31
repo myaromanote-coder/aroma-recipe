@@ -582,8 +582,8 @@ const BUILTIN_RECIPES = [
   {
     id: 'r-116', name: '설거지비누', category: '생활용품',
     description: '온가드 항균·오렌지 세정력의 천연 설거지 비누.\n화학 성분 없이 깨끗하게 세척합니다.',
-    refVolume: 100, carrier: '없음 (원액)',
-    ingredients: [{ name: '비누베이스', ml: 90 }, { name: 'EM원액', ml: 10 }, { name: '온가드', drops: 2 }, { name: '오렌지', drops: 1 }],
+    refVolume: 110, carrier: '없음 (원액)',
+    ingredients: [{ name: '비누베이스', ml: 100 }, { name: 'EM원액', ml: 10 }, { name: '온가드', drops: 2 }, { name: '오렌지', drops: 1 }],
     notes: '레몬, 자몽 추가 가능. 65-70도에서 에센셜오일 넣기'
   },
 
