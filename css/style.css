@@ -161,7 +161,7 @@ body {
 /* ── 히어로 / 검색 ───────────────────────────── */
 .hero {
   background: linear-gradient(135deg, var(--primary) 0%, #9B8BBF 100%);
-  padding: 28px 16px;
+  padding: 16px 16px 20px;
   text-align: center;
   color: white;
 }
@@ -217,9 +217,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  padding: 16px 0 8px;
-  max-height: calc(3 * (32px + 8px));
-  overflow: hidden;
+  padding: 12px 0 8px;
 }
 
 .chip {
