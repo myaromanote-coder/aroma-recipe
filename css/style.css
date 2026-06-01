@@ -219,6 +219,10 @@ body {
   gap: 8px;
   padding: 12px 0 8px;
 }
+.filter-break {
+  flex-basis: 100%;
+  height: 0;
+}
 
 .chip {
   padding: 6px 14px;
