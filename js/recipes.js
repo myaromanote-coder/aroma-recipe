@@ -697,7 +697,7 @@ const BUILTIN_RECIPES = [
     id: 'r-215', name: '산뜻한 공기 룸스프레이', category: '생활용품',
     description: '페퍼민트·오렌지·유칼립투스·로즈마리 청량 룸스프레이.\n필요한 공간이나 섬유에 스프레이합니다.',
     refVolume: 100, carrier: '없음 (원액)',
-    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, { name: '페퍼민트', drops: 2 }, { name: '오렌지', drops: 3 }, { name: '유칼립투스', drops: 2 }, { name: '로즈마리', drops: 1 }],
+    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, {name: '페퍼민트', drops: 10}, {name: '오렌지', drops: 15}, {name: '유칼립투스', drops: 10}, {name: '로즈마리', drops: 5}],
     notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
   },
   {
@@ -732,14 +732,14 @@ const BUILTIN_RECIPES = [
     id: 'r-220', name: '안티에이징 페이스 미스트', category: '피부',
     description: '프랑킨센스·코파이바·제라늄·시더우드 안티에이징 미스트.\n얼굴에 자주 분사해주세요.',
     refVolume: 100, carrier: '포어리듀싱토어 채우기',
-    ingredients: [{ name: '프랑킨센스', drops: 2 }, { name: '코파이바', drops: 2 }, { name: '라벤더', drops: 2 }, { name: '제라늄', drops: 2 }, { name: '파촐리', drops: 2 }, { name: '시더우드', drops: 2 }],
+    ingredients: [{name: '프랑킨센스', drops: 4}, {name: '코파이바', drops: 4}, {name: '라벤더', drops: 4}, {name: '제라늄', drops: 4}, {name: '파촐리', drops: 4}, {name: '시더우드', drops: 4}],
     notes: '얼굴에 자주 분사해주세요.'
   },
   {
     id: 'r-221', name: '안티스트레스 롤온', category: '스트레스',
     description: '스피어민트·라임·자몽·라벤더 스트레스 해소 롤온.\n손목, 목, 관자놀이에 바르세요.',
     refVolume: 10, carrier: '코코넛오일 채우기',
-    ingredients: [{ name: '스피어민트', drops: 5 }, { name: '라임', drops: 10 }, { name: '자몽', drops: 10 }, { name: '라벤더', drops: 5 }],
+    ingredients: [{name: '스피어민트', drops: 3}, {name: '라임', drops: 5}, {name: '자몽', drops: 5}, {name: '라벤더', drops: 3}],
     notes: ''
   },
   {
@@ -778,13 +778,6 @@ const BUILTIN_RECIPES = [
     notes: '향수처럼 바르세요.'
   },
   {
-    id: 'r-227', name: '허브향 룸스프레이', category: '생활용품',
-    description: '레몬그라스·로즈마리·유칼립투스 허브향 룸스프레이.\n필요한 공간이나 섬유에 뿌립니다.',
-    refVolume: 100, carrier: '없음 (원액)',
-    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, { name: '레몬그라스', drops: 2 }, { name: '로즈마리', drops: 3 }, { name: '유칼립투스', drops: 3 }],
-    notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
-  },
-  {
     id: 'r-228', name: '탈모방지 롤온', category: '건강케어',
     description: '로즈마리·시더우드·일랑일랑·라벤더 탈모 방지 롤온.\n샴푸 후 자기 전 두피에 바르세요.',
     refVolume: 10, carrier: '코코넛오일 채우기',
@@ -795,35 +788,28 @@ const BUILTIN_RECIPES = [
     id: 'r-229', name: '피부진정 (트러블·여드름)', category: '피부',
     description: '라벤더·티트리 피부 트러블·여드름 진정 롤온.\n진정이 필요한 부분에 발라주세요.',
     refVolume: 10, carrier: '코코넛오일 채우기',
-    ingredients: [{ name: '라벤더', drops: 15 }, { name: '티트리', drops: 20 }],
+    ingredients: [{name: '라벤더', drops: 7}, {name: '티트리', drops: 10}],
     notes: '진정이 필요한 부분에 발라주세요.'
   },
   {
     id: 'r-230', name: '집중(일·공부) 롤온', category: '집중력',
     description: '오렌지·페퍼민트·로즈마리 집중력 향상 롤온.\n맥박이 뛰는 곳에 향수처럼 바르고 향을 맡으세요.',
     refVolume: 10, carrier: '코코넛오일 채우기',
-    ingredients: [{ name: '오렌지', drops: 20 }, { name: '페퍼민트', drops: 10 }, { name: '로즈마리', drops: 5 }],
+    ingredients: [{name: '레몬', drops: 10}, {name: '페퍼민트', drops: 5}, {name: '로즈마리', drops: 3}],
     notes: '맥박이 뛰는 곳에 향수처럼 바르고 향을 맡으세요.'
   },
   {
     id: 'r-231', name: '침구 스프레이 (숙면·릴렉스)', category: '수면',
     description: '라벤더·캐모마일 숙면 유도 침구 스프레이.\n베개나 이불에 스프레이합니다.',
     refVolume: 100, carrier: '없음 (원액)',
-    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, { name: '라벤더', drops: 4 }, { name: '캐모마일', drops: 3 }],
-    notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
-  },
-  {
-    id: 'r-232', name: '편백(피톤치드) 스프레이', category: '생활용품',
-    description: '히노키 피톤치드 공기 정화 룸스프레이.\n필요한 공간이나 섬유에 스프레이합니다.',
-    refVolume: 100, carrier: '없음 (원액)',
-    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, { name: '히노키', drops: 9 }],
+    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, {name: '라벤더', drops: 20}, {name: '오렌지', drops: 10}, {name: '페퍼민트', drops: 10}],
     notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
   },
   {
     id: 'r-233', name: '에너지업 롤온', category: '스트레스',
     description: '오렌지·레몬·베르가못·페퍼민트 에너지 충전 롤온.\n향수처럼 바르고 향을 맡으세요.',
     refVolume: 10, carrier: '코코넛오일 채우기',
-    ingredients: [{ name: '오렌지', drops: 10 }, { name: '레몬', drops: 10 }, { name: '베르가못', drops: 5 }, { name: '페퍼민트', drops: 10 }],
+    ingredients: [{name: '오렌지', drops: 5}, {name: '베르가못', drops: 3}, {name: '페퍼민트', drops: 5}],
     notes: '향수처럼 바르고 향을 맡으세요.'
   },
   {
