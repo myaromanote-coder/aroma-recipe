@@ -662,14 +662,14 @@ const BUILTIN_RECIPES = [
     id: 'r-210', name: '시트러스향 룸스프레이', category: '생활용품',
     description: '라임·레몬·베르가못의 상큼한 시트러스 룸스프레이.\n필요한 공간이나 섬유에 스프레이합니다.',
     refVolume: 100, carrier: '없음 (원액)',
-    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, { name: '라임', drops: 3 }, { name: '레몬', drops: 4 }, { name: '베르가못', drops: 4 }],
+    ingredients: [{name: '정제수', ml: 50}, {name: '식물성에탄올', ml: 50}, { name: '라임', drops: 10 }, { name: '레몬', drops: 15 }, { name: '베르가못', drops: 15 }],
     notes: '식물성에탄올에 오일 첨가 후 정제수로 채운다.'
   },
   {
     id: 'r-211', name: '숙면.릴렉스 롤온', category: '수면',
     description: '베르가못·시더우드·프랑킨센스·라벤더 숙면 롤온.\n발바닥, 가슴, 목뒤, 손목에 바르세요.',
     refVolume: 10, carrier: '코코넛오일 채우기',
-    ingredients: [{ name: '베르가못', drops: 10 }, { name: '시더우드', drops: 10 }, { name: '프랑킨센스', drops: 5 }, { name: '라벤더', drops: 5 }],
+    ingredients: [{ name: '베르가못', drops: 5 }, { name: '시더우드', drops: 5 }, { name: '프랑킨센스', drops: 3 }, { name: '라벤더', drops: 3 }],
     notes: '발바닥, 가슴, 목뒤, 손목에 바르세요.'
   },
   {
