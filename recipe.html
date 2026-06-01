@@ -23,6 +23,7 @@
       <a class="icon-btn" href="index.html" title="검색">🔍</a>
       <a class="icon-btn" href="favorites.html" title="즐겨찾기">❤️</a>
       <a class="icon-btn" href="admin.html" id="adminBtn" title="관리자 설정" style="display:none">⚙️</a>
+      <button class="icon-btn" title="로그아웃" onclick="if(confirm('로그아웃 하시겠어요?')){localStorage.removeItem('aroma_auth');localStorage.removeItem('aroma_role');location.reload();}">🔒</button>
     </div>
   </div>
 </header>

@@ -29,6 +29,7 @@
         <span class="fav-badge" id="favBadge"></span>
       </a>
       <a class="icon-btn" href="admin.html" id="adminBtn" title="관리자 설정" style="display:none">⚙️</a>
+      <button class="icon-btn" id="logoutBtn" title="로그아웃" onclick="if(confirm('로그아웃 하시겠어요?')){localStorage.removeItem('aroma_auth');localStorage.removeItem('aroma_role');location.reload();}">🔒</button>
     </div>
   </div>
 </header>

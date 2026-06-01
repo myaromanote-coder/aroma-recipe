@@ -21,10 +21,7 @@
       <span class="logo-emoji">🌿</span>
       <span>아로마 레시피</span>
     </a>
-    <button onclick="localStorage.removeItem('aroma_auth'); location.reload();"
-      style="background:none;border:1px solid #ccc;border-radius:8px;padding:5px 12px;font-size:0.8rem;color:#888;cursor:pointer;">
-      🔒 로그아웃
-    </button>
+    <button class="icon-btn" title="로그아웃" onclick="if(confirm('로그아웃 하시겠어요?')){localStorage.removeItem('aroma_auth');localStorage.removeItem('aroma_role');location.href='index.html';}">🔒</button>
   </div>
 </header>
 
